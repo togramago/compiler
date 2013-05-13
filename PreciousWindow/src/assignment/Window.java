@@ -7,6 +7,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.awt.event.WindowEvent;
 import java.io.File;
 
 /**
@@ -26,44 +27,10 @@ public class Window implements ActionListener {
     public static final String SYMBOL_TABLE = "Symbol table";
     public static final String INSTRUCTIONS = "Instructions";
     public static final String ABSTRACT_SYNTAX_TREE = "Abstract syntax tree";
-    private final Dimension dim;
     private final LogWindow frame;
-//    private final JButton printSymbolTableButton;
-//    private final JButton printASTButton;
-//    private final JButton printInstructionsButton;
-//    private final JButton recompileButton;
 
     private final Driver driver;
-    private boolean setDriver;
-
-//    private final ActionListener openListener = new ActionListener() {
-//
-//        @Override
-//        public void actionPerformed(final ActionEvent arg0) {
-//            final JFileChooser fileopen = new JFileChooser();
-//            fileopen.setCurrentDirectory(new File("."));
-//
-//            final FileFilter filter = new FileNameExtensionFilter("java files",
-//                    "java");
-//            fileopen.setAcceptAllFileFilterUsed(false);
-//            fileopen.setFileFilter(filter);
-//
-//            final int ret = fileopen.showDialog(null, "Open file");
-//            if (ret == JFileChooser.APPROVE_OPTION) {
-//                setDriver = true;
-//                final File file = fileopen.getSelectedFile();
-//                setupDriver(file.getAbsolutePath());
-//                frame.setTitle("Compiling " + file.getAbsolutePath());
-//                compileFile();
-//                printASTButton.setEnabled(true);
-//                printInstructionsButton.setEnabled(driver
-//                        .canGenerateInstructions());
-//                printSymbolTableButton.setEnabled(true);
-//                recompileButton.setEnabled(true);
-//            }
-//
-//        }
-//    };
+    //private boolean setDriver;
 
 //    private final ActionListener printSymbolTableListener = new ActionListener() {
 //
@@ -95,49 +62,14 @@ public class Window implements ActionListener {
 //        }
 //    };
 
-//    private final ActionListener recompileListener = new ActionListener() {
-//
-//        @Override
-//        public void actionPerformed(final ActionEvent arg0) {
-//            if (setDriver) {
-//                driver.compile();
-//                frame.addToLog(driver.getLog());
-//            }
-//        }
-//    };
-
     public Window() {
         driver = new Driver();
-        setDriver = false;
+        //setDriver = false;
 
-        dim = Toolkit.getDefaultToolkit().getScreenSize();
-
+        // inherit a clean log window
         frame = new LogWindow();
 
-//        final JButton openButton = new JButton("Open...");
-//        openButton.addActionListener(openListener);
-//        printASTButton = new JButton("AS-Tree");
-//        printASTButton.addActionListener(printASTListener);
-//        printASTButton.setEnabled(false);
-//        printSymbolTableButton = new JButton("Symbol Table");
-//        printSymbolTableButton.addActionListener(printSymbolTableListener);
-//        printSymbolTableButton.setEnabled(false);
-//        printInstructionsButton = new JButton("Instructions");
-//        printInstructionsButton.addActionListener(printInstructionsListener);
-//        printInstructionsButton.setEnabled(false);
-//        recompileButton = new JButton("Recompile");
-//        recompileButton.addActionListener(recompileListener);
-//        recompileButton.setEnabled(false);
-//
-//        final JPanel buttonPanel = new JPanel();
-//        buttonPanel.add(openButton);
-//        buttonPanel.add(printASTButton);
-//        buttonPanel.add(printSymbolTableButton);
-//        buttonPanel.add(printInstructionsButton);
-//        buttonPanel.add(recompileButton);
-
-//        frame.add(buttonPanel, BorderLayout.PAGE_START);
-
+        // add menu
         frame.add(createMenuBar(), BorderLayout.PAGE_START);
         frame.pack();
 
@@ -214,6 +146,9 @@ public class Window implements ActionListener {
         return menuBar;
     }
 
+    /**
+     * show the form
+     */
     public void show() {
         frame.view();
     }
@@ -244,15 +179,14 @@ public class Window implements ActionListener {
 
             final int ret = fileChooser.showDialog(null, "Open file");
             if (ret == JFileChooser.APPROVE_OPTION) {
-                setDriver = true;
                 final File file = fileChooser.getSelectedFile();
                 setupDriver(file.getAbsolutePath());
                 frame.setTitle("Compiling " + file.getAbsolutePath());
-                compileFile();
+                compileFile(); //TODO: DOES NOT COMPILE!
             }
         }
         if (QUIT.equals(action)) {
-
+            frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
         }
         if (RUN.equals(action)) {
 
