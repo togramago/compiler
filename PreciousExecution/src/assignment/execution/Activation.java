@@ -43,7 +43,6 @@ public class Activation {
             if (methodInstruction != null) {
                 currentMethod = methodInstruction;
                 currentClass = classInstruction;
-                continue;
             }
         }
     }

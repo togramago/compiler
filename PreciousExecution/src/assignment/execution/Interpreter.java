@@ -11,15 +11,14 @@ import assignment.output.ClassRepository;
 
 public class Interpreter {
 
-	/** file to interpret */
-	private File file;
-	private final StringBuilder log;
+    private final StringBuilder log;
 	private final List<ClassInstruction> classes;
 	private static boolean debug;
 
 	public Interpreter(final String fileName) throws FileNotFoundException {
 		log = new StringBuilder();
-		file = new File(fileName);
+		/* file to interpret */
+        File file = new File(fileName);
 		if (file.exists()) {
 			final ClassRepository repo = new ClassRepository(file, log);
 			classes = repo.getClassInstructions();

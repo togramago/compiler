@@ -180,7 +180,7 @@ public class Driver {
     public String printTree() {
         String result = null;
         if (root != null) {
-            /* Print tree */
+            // print tree
             final PrintVisitor dfsPrint = new PrintVisitor(root);
             result = dfsPrint.getResult();
         }

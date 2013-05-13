@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.Arrays;
 
 import assignment.Driver;
 import assignment.instruction.ClassInstruction;
@@ -25,10 +26,6 @@ public class ClassFile implements Serializable {
 
 	private final StringBuilder log;
 	private final static String FILE_EXTENSION = ".tjc";
-
-	public ClassFile(final StringBuilder log) {
-		this.log = log;
-	}
 
 	public ClassFile(final ClassInstruction record, final StringBuilder log) {
 		this.record = record;
@@ -52,7 +49,7 @@ public class ClassFile implements Serializable {
 				oos.close();
 				fos.close();
 			} catch (IOException e) {
-				log.append(e.getStackTrace());
+				log.append(Arrays.toString(e.getStackTrace()));
 				log.append(e.getMessage());
 			}
 		}
@@ -75,19 +72,12 @@ public class ClassFile implements Serializable {
 				record = (ClassInstruction) read;
 			}
 		} catch (IOException e) {
-			log.append(e.getStackTrace());
+			log.append(Arrays.toString(e.getStackTrace()));
 			log.append(e.getMessage());
 		} catch (ClassNotFoundException ce) {
-			log.append(ce.getStackTrace());
+			log.append(Arrays.toString(ce.getStackTrace()));
 			log.append(ce.getMessage());
 		}
-	}
-
-	/**
-	 * @return name of ClassRecord
-	 */
-	public String getClassName() {
-		return record.getName();
 	}
 
 	/**
@@ -95,10 +85,6 @@ public class ClassFile implements Serializable {
 	 */
 	public String getFileName() {
 		return Driver.outputString() + record.getName() + FILE_EXTENSION;
-	}
-
-	public ClassFile getClassFile() {
-		return null;
 	}
 
 	public ClassInstruction getClassInstruction() {
