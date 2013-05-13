@@ -14,6 +14,15 @@ import java.awt.event.KeyEvent;
  */
 public class Window implements ActionListener {
 
+    public static final String OPEN = "Open";
+    public static final String QUIT = "Quit";
+    public static final String RUN = "Run";
+    public static final String COMPILE = "Compile";
+    public static final String BUILD = "Build";
+    public static final String SHOW = "Show";
+    public static final String SYMBOL_TABLE = "Symbol table";
+    public static final String INSTRUCTIONS = "Instructions";
+    public static final String ABSTRACT_SYNTAX_TREE = "Abstract syntax tree";
     private final Dimension dim;
     private final LogWindow frame;
 //    private final JButton printSymbolTableButton;
@@ -143,18 +152,18 @@ public class Window implements ActionListener {
 
         final JMenuItem fileOpen = new JMenuItem("Open...",
                 KeyEvent.VK_O);
-        fileOpen.setActionCommand("Open");
+        fileOpen.setActionCommand(OPEN);
         fileOpen.addActionListener(this);
         menuFile.add(fileOpen);
         menuFile.addSeparator();
 
-        final JMenuItem fileQuit = new JMenuItem("Quit",
+        final JMenuItem fileQuit = new JMenuItem(QUIT,
                 KeyEvent.VK_Q);
         fileQuit.setActionCommand("Quit");
         fileQuit.addActionListener(this);
         menuFile.add(fileQuit);
 
-        final JMenu menuRun = new JMenu("Run");
+        final JMenu menuRun = new JMenu(RUN);
         menuRun.setBackground(new Color(0x46801E));
         menuRun.setMnemonic(KeyEvent.VK_R);
         menuBar.add(menuRun);
@@ -162,18 +171,18 @@ public class Window implements ActionListener {
 
         final JMenuItem runCompile = new JMenuItem("Compile",
                 KeyEvent.VK_C);
-        runCompile.setActionCommand("Compile");
+        runCompile.setActionCommand(COMPILE);
         runCompile.addActionListener(this);
         menuRun.add(runCompile);
         menuRun.addSeparator();
 
         final JMenuItem runBuild = new JMenuItem("Build",
                 KeyEvent.VK_B);
-        runBuild.setActionCommand("Build");
+        runBuild.setActionCommand(BUILD);
         runBuild.addActionListener(this);
         menuRun.add(runBuild);
 
-        final JMenu menuShow = new JMenu("Show");
+        final JMenu menuShow = new JMenu(SHOW);
         menuShow.setBackground(new Color(0x46801E));
         menuShow.setMnemonic(KeyEvent.VK_S);
         menuBar.add(menuShow);
@@ -181,21 +190,21 @@ public class Window implements ActionListener {
 
         final JMenuItem showSymbolTable = new JMenuItem("Symbol table",
                 KeyEvent.VK_S);
-        showSymbolTable.setActionCommand("Symbol table");
+        showSymbolTable.setActionCommand(SYMBOL_TABLE);
         showSymbolTable.addActionListener(this);
         menuShow.add(showSymbolTable);
         menuShow.addSeparator();
 
         final JMenuItem showInstructions = new JMenuItem("Instructions",
                 KeyEvent.VK_I);
-        showInstructions.setActionCommand("Instructions");
+        showInstructions.setActionCommand(INSTRUCTIONS);
         showInstructions.addActionListener(this);
         menuShow.add(showInstructions);
         menuShow.addSeparator();
 
         final JMenuItem showAST = new JMenuItem("Abstract syntax tree",
                 KeyEvent.VK_A);
-        showAST.setActionCommand("Abstract syntax tree");
+        showAST.setActionCommand(ABSTRACT_SYNTAX_TREE);
         showAST.addActionListener(this);
         menuShow.add(showAST);
 
@@ -220,7 +229,7 @@ public class Window implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        frame.addToLog("actionPerformed!");
-        e.getActionCommand() ==
+        final String action = e.getActionCommand();
+
     }
 }
