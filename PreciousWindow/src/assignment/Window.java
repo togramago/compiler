@@ -123,6 +123,7 @@ public class Window implements ActionListener {
     }
 
     private void compileFile() {
+        //driver.compile();
         frame.addToLog(driver.getLog());
     }
 
