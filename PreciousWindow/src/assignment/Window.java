@@ -18,7 +18,8 @@ import java.io.File;
  */
 public class Window implements ActionListener {
 
-    public static final String OPEN = "Open";
+    public static final String FILE = "File";
+    public static final String OPEN = "Open...";
     public static final String QUIT = "Quit";
     public static final String RUN = "Run";
     public static final String COMPILE = "Compile";
@@ -28,46 +29,13 @@ public class Window implements ActionListener {
     public static final String INSTRUCTIONS = "Instructions";
     public static final String ABSTRACT_SYNTAX_TREE = "Abstract syntax tree";
     private final LogWindow frame;
-
     private final Driver driver;
-    //private boolean setDriver;
-
-//    private final ActionListener printSymbolTableListener = new ActionListener() {
-//
-//        @Override
-//        public void actionPerformed(final ActionEvent arg0) {
-//            if (setDriver) {
-//                frame.addToLog(driver.printSymbolTable());
-//            }
-//        }
-//    };
-
-//    private final ActionListener printASTListener = new ActionListener() {
-//
-//        @Override
-//        public void actionPerformed(final ActionEvent arg0) {
-//            if (setDriver) {
-//                frame.addToLog(driver.printTree());
-//            }
-//        }
-//    };
-
-//    private final ActionListener printInstructionsListener = new ActionListener() {
-//
-//        @Override
-//        public void actionPerformed(final ActionEvent arg0) {
-//            if (setDriver) {
-//                frame.addToLog(driver.printInstructions());
-//            }
-//        }
-//    };
 
     public Window() {
         driver = new Driver();
-        //setDriver = false;
 
-        // inherit a clean log window
-        frame = new LogWindow();
+        // clean log window
+        frame = new LogWindow("MiniJava Compiler");
 
         // add menu
         frame.add(createMenuBar(), BorderLayout.PAGE_START);
@@ -79,13 +47,13 @@ public class Window implements ActionListener {
         final JMenuBar menuBar = new JMenuBar();
         menuBar.setBackground(new Color(0x46801E));
 
-        final JMenu menuFile = new JMenu("File");
+        final JMenu menuFile = new JMenu(FILE);
         menuFile.setBackground(new Color(0x46801E));
         menuFile.setMnemonic(KeyEvent.VK_F);
         menuBar.add(menuFile);
         menuFile.setOpaque(false);
 
-        final JMenuItem fileOpen = new JMenuItem("Open...",
+        final JMenuItem fileOpen = new JMenuItem(OPEN,
                 KeyEvent.VK_O);
         fileOpen.setActionCommand(OPEN);
         fileOpen.addActionListener(this);
@@ -94,7 +62,7 @@ public class Window implements ActionListener {
 
         final JMenuItem fileQuit = new JMenuItem(QUIT,
                 KeyEvent.VK_Q);
-        fileQuit.setActionCommand("Quit");
+        fileQuit.setActionCommand(QUIT);
         fileQuit.addActionListener(this);
         menuFile.add(fileQuit);
 
@@ -104,14 +72,14 @@ public class Window implements ActionListener {
         menuBar.add(menuRun);
         menuRun.setOpaque(false);
 
-        final JMenuItem runCompile = new JMenuItem("Compile",
+        final JMenuItem runCompile = new JMenuItem(COMPILE,
                 KeyEvent.VK_C);
         runCompile.setActionCommand(COMPILE);
         runCompile.addActionListener(this);
         menuRun.add(runCompile);
         menuRun.addSeparator();
 
-        final JMenuItem runBuild = new JMenuItem("Build",
+        final JMenuItem runBuild = new JMenuItem(BUILD,
                 KeyEvent.VK_B);
         runBuild.setActionCommand(BUILD);
         runBuild.addActionListener(this);
@@ -123,21 +91,21 @@ public class Window implements ActionListener {
         menuBar.add(menuShow);
         menuShow.setOpaque(false);
 
-        final JMenuItem showSymbolTable = new JMenuItem("Symbol table",
+        final JMenuItem showSymbolTable = new JMenuItem(SYMBOL_TABLE,
                 KeyEvent.VK_S);
         showSymbolTable.setActionCommand(SYMBOL_TABLE);
         showSymbolTable.addActionListener(this);
         menuShow.add(showSymbolTable);
         menuShow.addSeparator();
 
-        final JMenuItem showInstructions = new JMenuItem("Instructions",
+        final JMenuItem showInstructions = new JMenuItem(INSTRUCTIONS,
                 KeyEvent.VK_I);
         showInstructions.setActionCommand(INSTRUCTIONS);
         showInstructions.addActionListener(this);
         menuShow.add(showInstructions);
         menuShow.addSeparator();
 
-        final JMenuItem showAST = new JMenuItem("Abstract syntax tree",
+        final JMenuItem showAST = new JMenuItem(ABSTRACT_SYNTAX_TREE,
                 KeyEvent.VK_A);
         showAST.setActionCommand(ABSTRACT_SYNTAX_TREE);
         showAST.addActionListener(this);
@@ -188,26 +156,29 @@ public class Window implements ActionListener {
         if (QUIT.equals(action)) {
             frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
         }
-        if (RUN.equals(action)) {
-
-        }
         if (COMPILE.equals(action)) {
 
         }
         if (BUILD.equals(action)) {
 
         }
-        if (SHOW.equals(action)) {
-
-        }
         if (SYMBOL_TABLE.equals(action)) {
-
+            LogWindow symbolTableLog = new LogWindow("Print symbol table");
+            symbolTableLog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+            symbolTableLog.addToLog(driver.printSymbolTable());
+            symbolTableLog.view();
         }
         if (INSTRUCTIONS.equals(action)) {
-
+            LogWindow instructionLog = new LogWindow("Print instructions");
+            instructionLog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+            instructionLog.addToLog(driver.printInstructions());
+            instructionLog.view();
         }
         if (ABSTRACT_SYNTAX_TREE.equals(action)) {
-
+            LogWindow syntaxTreeLog = new LogWindow("Print abstract syntax tree");
+            syntaxTreeLog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+            syntaxTreeLog.addToLog(driver.printTree());
+            syntaxTreeLog.view();
         }
     }
 }

@@ -3,15 +3,15 @@ package assignment;
 import javax.swing.*;
 import java.awt.*;
 
-public class LogWindow extends JFrame{
+public class LogWindow extends JFrame {
     private final Dimension dim;
     private final JTextArea log;
 
-    public LogWindow() {
+    public LogWindow(String title) {
+        this.setTitle(title); //set title to each frame
         dim = Toolkit.getDefaultToolkit().getScreenSize();
 
-
-       setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         log = new JTextArea(30, 60);
         log.setEditable(false);
@@ -22,7 +22,6 @@ public class LogWindow extends JFrame{
     }
 
     public void view() {
-//        setSize(450, 260);
         final int width = (int) ((dim.getWidth() - getWidth()) / 2);
         final int height = (int) ((dim.getHeight() - getHeight()) / 2);
         setLocation(width, height);
