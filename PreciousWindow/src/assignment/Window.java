@@ -133,6 +133,10 @@ public class Window implements ActionListener {
         new Window().show();
     }
 
+    /**
+     *
+     * @param e performed action on form
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         final String action = e.getActionCommand();

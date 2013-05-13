@@ -18,6 +18,7 @@ public class LogWindow extends JFrame {
         final JScrollPane logScrollPane = new JScrollPane(log);
 
         add(logScrollPane, BorderLayout.CENTER);
+        pack();
 
     }
 
