@@ -2,12 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/input/FacFib.tjc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/input/FacFib.tjr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/input/FacFibImpl.tjc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/input/Sum.tjc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/input/Sum.tjr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/input/Test.tjc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/Driver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/Error.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaLexer$DFA6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaLexer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$additiveExpr_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$andExpr_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$arrayLengthReference_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$classDeclaration_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$compareExpr_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$expressionList_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$expression_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$extendsClause_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$goal_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$identifier_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$mainClass_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$methodDeclarationList_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$methodDeclaration_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$methodInvocation_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$multExpr_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$orExpr_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$param_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$primaryExpressionPrefix_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$primaryExpression_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$statement_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$type_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$unaryExpr_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$varDeclarationList_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$varDeclaration_return.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/assignment.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/instruction/ClassInstruction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/instruction/Instruction$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/instruction/Instruction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/instruction/MethodInstruction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/instruction/VariableInstruction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Console.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Interaction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Window$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Window$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Window$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Window$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Window$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Window.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/output/ClassFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/output/ClassRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/ClassRecord.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/Code.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/MethodRecord.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/Record.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/Scope.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/SymbolTable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/VariableRecord.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/visitor/AbstractVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/visitor/GenerateCodeVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/visitor/PrintVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/visitor/SymbolTableVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/visitor/TypeCheckVisitor.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PreciousAnalysis.iws" />
@@ -16,7 +67,7 @@
     <file path="/RecursiveSum.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368396689238" ignored="false" />
     <file path="/a.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449410912" ignored="false" />
     <file path="/JarFileConstructor.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368448394324" ignored="false" />
-    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368476135222" ignored="false" />
+    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368476290999" ignored="false" />
     <file path="/Activation.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449846599" ignored="false" />
     <file path="/Interaction.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368450482350" ignored="false" />
     <file path="/Window.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368474218245" ignored="false" />
@@ -135,7 +186,7 @@
       <file leaf-file-name="ClassRepository.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="21" selection-start="1579" selection-end="1579" vertical-scroll-proportion="1.5283757">
+            <state line="61" column="21" selection-start="1579" selection-end="1579" vertical-scroll-proportion="1.7906066">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2074#2104#0" expanded="true" />
@@ -600,7 +651,11 @@
       <created>1368476137419</created>
       <updated>1368476137419</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="testing file storage">
+      <created>1368476292759</created>
+      <updated>1368476292759</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -843,7 +898,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="21" selection-start="1579" selection-end="1579" vertical-scroll-proportion="1.5283757">
+        <state line="61" column="21" selection-start="1579" selection-end="1579" vertical-scroll-proportion="1.7906066">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2074#2104#0" expanded="true" />
