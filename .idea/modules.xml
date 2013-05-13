@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PreciousAnalysis/PreciousAnalysis.iml" filepath="$PROJECT_DIR$/PreciousAnalysis/PreciousAnalysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PreciousExecution/PreciousExecution.iml" filepath="$PROJECT_DIR$/PreciousExecution/PreciousExecution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PreciousWindow/PreciousWindow.iml" filepath="$PROJECT_DIR$/PreciousWindow/PreciousWindow.iml" />
+    </modules>
+  </component>
+</project>
+

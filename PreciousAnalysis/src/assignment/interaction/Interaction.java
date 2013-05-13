@@ -1,0 +1,114 @@
+package assignment.interaction;
+
+import java.io.File;
+
+import assignment.Driver;
+
+/**
+ * UI management
+ * 
+ * @author Margarita Litkevych
+ * @author Tymur Maryokhin
+ */
+public class Interaction {
+
+	/**
+	 * run Driver in graphical mode or in console mode. in long annotation:
+	 * --mode ARG, where ARG = 0 for console mode, else for window mode. in
+	 * short annotation: -c for console mode, -w for window mode.
+	 */
+	private boolean windowMode;
+	/**
+	 * Flag for showing symbol table in console mode. --showSymbolTable or -s
+	 */
+	private boolean showSymbolTable;
+	/**
+	 * Flag for showing AS-tree of test program. --showAST or -a
+	 */
+	private boolean showAST;
+	private final String[] args;
+
+	public Interaction(final String[] args) {
+		this.args = args;
+		windowMode = true;
+		showSymbolTable = false;
+		showAST = false;
+	
+		new Console(args, this).parseArguments();
+	}
+
+	public void setShowSymbolTable(final boolean showSymbolTable) {
+		this.showSymbolTable = showSymbolTable;
+	}
+
+	public void setShowAST(final boolean showAST) {
+		this.showAST = showAST;
+	}
+
+	public void setConsoleMode() {
+		windowMode = false;
+	}
+
+	public void setWindowMode() {
+		windowMode = true;
+	}
+
+	public void setMode(final boolean mode) {
+		this.windowMode = mode;
+	}
+
+	/**
+	 * Runs interaction routine: choose console or window mode, run Driver and so on.
+	 */
+	public void execute() {
+		Driver.setOutputString(null);
+		if (windowMode) {
+			final Window window = new Window();
+			window.show();
+		} else {
+			if (isAllowedName()) {
+				final Driver driver = new Driver();
+				driver.setFile(args[0]);
+				System.out.println("Compiling " + args[0]);
+				driver.compile();
+				if (showSymbolTable) {
+					System.out.println(driver.printSymbolTable());
+				}
+				if (showAST) {
+					System.out.println(driver.printTree());
+				}
+				if (driver.canGenerateInstructions()) {
+					System.out.println(driver.printInstructions());
+				}
+				System.out.println(driver.getLog());
+			} else {
+				helpAndExit();
+			}
+		}
+	}
+	
+	private static void helpAndExit() {
+		System.out
+				.println("Use: java -jar <application> <input file> [arguments] [-o|--output <output file>]");
+		System.out
+				.println("  <application>  - generate.jar");
+		System.out.println("  <input file> -  .java-input file");
+		System.out.println("  <output path> - path to the folder with tracing /");
+		System.out.println("  arguments (unix like - '-fF' = '-f -F'):");
+		System.out.println("    -w | --mode n, n>0           window mode");
+		System.out.println("    -c | --mode 0                console mode");
+		System.out.println("    -s | --showSymbolTable       show symbol table");
+		System.out.println("    -a | --showAST               show AS-tree");
+		System.out.println("    -o | --output <output path>  explicitly set output path");
+		System.out.println();
+		System.out.println("Example of execution may be: ");
+		System.out
+				.println("  java -jar execute.jar MyApp.tjr");
+		System.out.println();
+		System.exit(1);
+	}
+
+	private boolean isAllowedName() {
+		return new File(args[0]).exists();
+	}
+}
