@@ -36,7 +36,7 @@ public class Driver {
 
     private transient String file;
     private transient CommonTree root;
-    private boolean canGenerate;
+    private boolean build;
     private transient SymbolTable symbolTable;
     private ClassRepository repository;
 
@@ -48,12 +48,12 @@ public class Driver {
     public Driver(final String file) {
         this.file = file;
         log = new StringBuilder();
-        canGenerate = false;
+        build = false;
     }
 
     public Driver() {
         log = new StringBuilder();
-        canGenerate = false;
+        build = false;
     }
 
     /**
@@ -119,7 +119,7 @@ public class Driver {
                     Error.fatalComplain(
                             "FATAL ERROR. " + parser.getNumberOfSyntaxErrors()
                                     + " syntax error(s). Terminated.", log);
-                    return;
+                    build = false;
                 } else {
 
 					/* Symbol table construction */
@@ -156,10 +156,10 @@ public class Driver {
         if (errors > 0) {
             log.append("\nBuild failed. " + errors + " error(s).\n");
             result = false;
-            canGenerate = false;
+            build = false;
         } else {
             result = true;
-            canGenerate = true;
+            build = true;
             if (finalCheck) {
                 log.append("Build complete.\n\n");
             }
@@ -170,8 +170,8 @@ public class Driver {
     /**
      * @return true if build is complete, false if errors exist
      */
-    public boolean canGenerateInstructions() {
-        return canGenerate;
+    public boolean isValidBuild() {
+        return build;
     }
 
     /**

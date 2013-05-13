@@ -74,7 +74,7 @@ public class Interaction {
             if (showAST) {
                 System.out.println(driver.printTree());
             }
-            if (driver.canGenerateInstructions()) {
+            if (driver.isValidBuild()) {
                 System.out.println(driver.printInstructions());
             }
             System.out.println(driver.getLog());

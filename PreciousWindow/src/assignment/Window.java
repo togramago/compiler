@@ -30,6 +30,7 @@ public class Window implements ActionListener {
     public static final String ABSTRACT_SYNTAX_TREE = "Abstract syntax tree";
     private final LogWindow frame;
     private final Driver driver;
+    private JMenu menuShow;
 
     public Window() {
         driver = new Driver();
@@ -88,9 +89,10 @@ public class Window implements ActionListener {
         runBuild.addActionListener(this);
         menuRun.add(runBuild);
 
-        final JMenu menuShow = new JMenu(SHOW);
+        menuShow = new JMenu(SHOW);
         menuShow.setMnemonic(KeyEvent.VK_S);
         menuBar.add(menuShow);
+        menuShow.setEnabled(false);
         menuShow.setOpaque(false);
 
         final JMenuItem showSymbolTable = new JMenuItem(SYMBOL_TABLE,
@@ -167,6 +169,9 @@ public class Window implements ActionListener {
                 setupDriver(file.getAbsolutePath());
                 frame.setTitle("Compiling " + file.getAbsolutePath());
                 compileFile();
+                if (driver.isValidBuild()) {
+                    menuShow.setEnabled(true);
+                }
             }
         }
         if (QUIT.equals(action)) {
@@ -174,6 +179,9 @@ public class Window implements ActionListener {
         }
         if (COMPILE.equals(action)) {
             compileFile();
+            if (driver.isValidBuild()) {
+                menuShow.setEnabled(true);
+            }
         }
         if (BUILD.equals(action)) { //TODO: execute .jar + .tjr pair and print result
 
