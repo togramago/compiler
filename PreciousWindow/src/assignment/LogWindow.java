@@ -3,36 +3,35 @@ package assignment;
 import javax.swing.*;
 import java.awt.*;
 
-public class LogWindow {
+public class LogWindow extends JFrame{
     private final Dimension dim;
-    private final JFrame frame;
     private final JTextArea log;
 
     public LogWindow() {
         dim = Toolkit.getDefaultToolkit().getScreenSize();
 
-        frame = new JFrame("TinyJava Compiler");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+       setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         log = new JTextArea(30, 60);
         log.setMargin(new Insets(5, 5, 5, 5));
         log.setEditable(false);
         final JScrollPane logScrollPane = new JScrollPane(log);
 
-        frame.add(logScrollPane, BorderLayout.CENTER);
-        frame.pack();
+        add(logScrollPane, BorderLayout.CENTER);
+        pack();
     }
 
-    public void show() {
-        final int width = (int) ((dim.getWidth() - frame.getWidth()) / 2);
-        final int height = (int) ((dim.getHeight() - frame.getHeight()) / 2);
-        frame.setLocation(width, height);
-        frame.setVisible(true);
+    public void view() {
+        final int width = (int) ((dim.getWidth() - getWidth()) / 2);
+        final int height = (int) ((dim.getHeight() - getHeight()) / 2);
+        setLocation(width, height);
+        setVisible(true);
     }
 
-    public void addToLog(final StringBuilder logText) {
+    public void addToLog(final String logText) {
         log.setText("");
-        log.append(logText.toString());
+        log.append(logText);
         log.setCaretPosition(log.getDocument().getLength());
     }
 }

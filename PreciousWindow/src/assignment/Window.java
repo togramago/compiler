@@ -1,23 +1,12 @@
 package assignment;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Insets;
-import java.awt.Toolkit;
+import javax.swing.*;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.filechooser.FileNameExtensionFilter;
-
-import assignment.Driver;
 
 /**
  * GUI management
@@ -28,8 +17,7 @@ import assignment.Driver;
 public class Window {
 
     private final Dimension dim;
-    private final JFrame frame;
-    private final JTextArea log;
+    private final LogWindow frame;
     private final JButton printSymbolTableButton;
     private final JButton printASTButton;
     private final JButton printInstructionsButton;
@@ -72,8 +60,7 @@ public class Window {
         @Override
         public void actionPerformed(final ActionEvent arg0) {
             if (setDriver) {
-                log.append(driver.printSymbolTable());
-                log.setCaretPosition(log.getDocument().getLength());
+                frame.addToLog(driver.printSymbolTable());
             }
         }
     };
@@ -83,8 +70,7 @@ public class Window {
         @Override
         public void actionPerformed(final ActionEvent arg0) {
             if (setDriver) {
-                log.append(driver.printTree());
-                log.setCaretPosition(log.getDocument().getLength());
+                frame.addToLog(driver.printTree());
             }
         }
     };
@@ -94,8 +80,7 @@ public class Window {
         @Override
         public void actionPerformed(final ActionEvent arg0) {
             if (setDriver) {
-                log.append(driver.printInstructions());
-                log.setCaretPosition(log.getDocument().getLength());
+                frame.addToLog(driver.printInstructions());
             }
         }
     };
@@ -106,8 +91,7 @@ public class Window {
         public void actionPerformed(final ActionEvent arg0) {
             if (setDriver) {
                 driver.compile();
-                log.append(driver.getLog());
-                log.setCaretPosition(log.getDocument().getLength());
+                frame.addToLog(driver.getLog());
             }
         }
     };
@@ -118,13 +102,7 @@ public class Window {
 
         dim = Toolkit.getDefaultToolkit().getScreenSize();
 
-        frame = new JFrame("TinyJava Compiler");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        log = new JTextArea(30, 60);
-        log.setMargin(new Insets(5, 5, 5, 5));
-        log.setEditable(false);
-        final JScrollPane logScrollPane = new JScrollPane(log);
+        frame = new LogWindow();
 
         final JButton openButton = new JButton("Open...");
         openButton.addActionListener(openListener);
@@ -149,9 +127,7 @@ public class Window {
         buttonPanel.add(recompileButton);
 
         frame.add(buttonPanel, BorderLayout.PAGE_START);
-        frame.add(logScrollPane, BorderLayout.CENTER);
         frame.pack();
-
     }
 
     public void show() {
@@ -166,10 +142,7 @@ public class Window {
     }
 
     private void compileFile() {
-        log.setText("");
-        driver.compile();
-        log.append(driver.getLog());
-        log.setCaretPosition(log.getDocument().getLength());
+        frame.addToLog(driver.getLog());
     }
 
     public static void main(final String[] args) {
