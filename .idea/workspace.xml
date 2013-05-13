@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PreciousWindow/src/assignment/LogWindow.java" afterPath="$PROJECT_DIR$/PreciousWindow/src/assignment/LogWindow.java" />
+    <list default="true" id="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" name="Default" comment="menuBar with menuFile added.&#10;compilation fails">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java" afterPath="$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -12,10 +11,10 @@
     <file path="/RecursiveSum.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368396689238" ignored="false" />
     <file path="/a.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449410912" ignored="false" />
     <file path="/JarFileConstructor.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368448394324" ignored="false" />
-    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368451963919" ignored="false" />
+    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368453986710" ignored="false" />
     <file path="/Activation.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449846599" ignored="false" />
     <file path="/Interaction.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368450482350" ignored="false" />
-    <file path="/Window.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368453775264" ignored="false" />
+    <file path="/Window.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368455576295" ignored="false" />
     <file path="/LogWindow.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368453352518" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +79,7 @@
       <file leaf-file-name="Window.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="49" selection-start="5125" selection-end="5125" vertical-scroll-proportion="0.5294118">
+            <state line="179" column="32" selection-start="6090" selection-end="6090" vertical-scroll-proportion="0.5294118">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,9 +91,7 @@
         <entry file="file://$PROJECT_DIR$/PreciousWindow/src/assignment/LogWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,9 +109,7 @@
         <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Interaction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="19" column="20" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -368,12 +363,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.Window">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -388,19 +383,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -428,6 +410,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -571,7 +566,11 @@
       <created>1368451966619</created>
       <updated>1368451966619</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="menuBar with menuFile added.&#10;compilation fails">
+      <created>1368453841402</created>
+      <updated>1368453841402</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -663,7 +662,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="logWindow &#10;why U no compile???" />
+    <option name="LAST_COMMIT_MESSAGE" value="menuBar with menuFile added.&#10;compilation fails" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -681,6 +680,7 @@
     <MESSAGE value="begin window" />
     <MESSAGE value="logwindow added" />
     <MESSAGE value="logWindow &#10;why U no compile???" />
+    <MESSAGE value="menuBar with menuFile added.&#10;compilation fails" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -692,24 +692,18 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/instruction/Instruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="22" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="49" column="22" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="26" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Interaction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="27" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -722,51 +716,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="727" selection-end="727" vertical-scroll-proportion="0.029411765">
-          <folding />
-        </state>
+        <state line="28" column="26" selection-start="727" selection-end="727" vertical-scroll-proportion="0.029411765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/instruction/VariableInstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="12" selection-start="796" selection-end="796" vertical-scroll-proportion="0.029411765">
-          <folding />
-        </state>
+        <state line="32" column="12" selection-start="796" selection-end="796" vertical-scroll-proportion="0.029411765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/scope/Scope.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="45" selection-start="1741" selection-end="1741" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="82" column="45" selection-start="1741" selection-end="1741" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Activation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="49" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="49" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Interpreter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="11" column="13" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/test/RecursiveSum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="8" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/instruction/Instruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="40" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="58" column="40" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/Driver.java">
@@ -786,24 +766,20 @@
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Interaction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="20" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousWindow/src/assignment/LogWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="49" selection-start="5125" selection-end="5125" vertical-scroll-proportion="0.5294118">
+        <state line="179" column="32" selection-start="6090" selection-end="6090" vertical-scroll-proportion="0.5294118">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

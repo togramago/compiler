@@ -130,30 +130,58 @@ public class Window {
     }
 
     private JMenuBar createMenuBar(){
-        JMenuBar menuBar = new JMenuBar();
-        menuBar.setBackground(new Color(0x64B62A));
+        final JMenuBar menuBar = new JMenuBar();
+        menuBar.setBackground(new Color(0x46801E));
 
-        JMenu menuFile = new JMenu("File");
+        final JMenu menuFile = new JMenu("File");
         menuFile.setBackground(new Color(0x46801E));
         menuFile.setMnemonic(KeyEvent.VK_F);
-        menuFile.getAccessibleContext().setAccessibleDescription(
-                "The only menu in this program that has menu items");
         menuBar.add(menuFile);
+        menuFile.setOpaque(false);
 
-        JMenuItem fileOpen = new JMenuItem("Open...",
+        final JMenuItem fileOpen = new JMenuItem("Open...",
                 KeyEvent.VK_O);
-        fileOpen.getAccessibleContext().setAccessibleDescription(
-                "This doesn't really do anything");
         menuFile.add(fileOpen);
+        menuFile.addSeparator();
 
-        menuFile.add(new JPopupMenu.Separator());
-
-        JMenuItem fileQuit = new JMenuItem("Quit",
+        final JMenuItem fileQuit = new JMenuItem("Quit",
                 KeyEvent.VK_Q);
-        fileQuit.getAccessibleContext().setAccessibleDescription(
-                "This doesn't really do anything");
         menuFile.add(fileQuit);
 
+        final JMenu menuRun = new JMenu("Run");
+        menuRun.setBackground(new Color(0x46801E));
+        menuRun.setMnemonic(KeyEvent.VK_R);
+        menuBar.add(menuRun);
+        menuRun.setOpaque(false);
+
+        final JMenuItem runCompile = new JMenuItem("Compile",
+                KeyEvent.VK_C);
+        menuRun.add(runCompile);
+        menuRun.addSeparator();
+
+        final JMenuItem runBuild = new JMenuItem("Build",
+                KeyEvent.VK_B);
+        menuRun.add(runBuild);
+
+        final JMenu menuShow = new JMenu("Show");
+        menuShow.setBackground(new Color(0x46801E));
+        menuShow.setMnemonic(KeyEvent.VK_S);
+        menuBar.add(menuShow);
+        menuShow.setOpaque(false);
+
+        final JMenuItem showSymbolTable = new JMenuItem("Symbol table",
+                KeyEvent.VK_S);
+        menuShow.add(showSymbolTable);
+        menuShow.addSeparator();
+
+        final JMenuItem showInstructions = new JMenuItem("Instructions",
+                KeyEvent.VK_I);
+        menuShow.add(showInstructions);
+        menuShow.addSeparator();
+
+        final JMenuItem showAST = new JMenuItem("Abstract syntax tree",
+                KeyEvent.VK_A);
+        menuShow.add(showAST);
 
         return menuBar;
     }
