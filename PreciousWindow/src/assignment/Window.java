@@ -43,6 +43,11 @@ public class Window implements ActionListener {
 
     }
 
+    /**
+     * create main menu
+     *
+     * @return created menu
+     */
     private JMenuBar createMenuBar() {
         final JMenuBar menuBar = new JMenuBar();
         menuBar.setBackground(new Color(0x46801E));
@@ -118,10 +123,18 @@ public class Window implements ActionListener {
         frame.view();
     }
 
+    /**
+     * send file to driver
+     *
+     * @param fileName of test program
+     */
     private void setupDriver(final String fileName) {
         driver.setFile(fileName);
     }
 
+    /**
+     * compile test program
+     */
     private void compileFile() {
         driver.compile();
         frame.addToLog(driver.getLog());
@@ -153,16 +166,16 @@ public class Window implements ActionListener {
                 final File file = fileChooser.getSelectedFile();
                 setupDriver(file.getAbsolutePath());
                 frame.setTitle("Compiling " + file.getAbsolutePath());
-                compileFile(); //TODO: DOES NOT COMPILE!
+                compileFile();
             }
         }
         if (QUIT.equals(action)) {
             frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
         }
         if (COMPILE.equals(action)) {
-
+            compileFile();
         }
-        if (BUILD.equals(action)) {
+        if (BUILD.equals(action)) { //TODO: execute .jar + .tjr pair and print result
 
         }
         if (SYMBOL_TABLE.equals(action)) {
