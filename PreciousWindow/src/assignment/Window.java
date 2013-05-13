@@ -48,7 +48,6 @@ public class Window implements ActionListener {
         menuBar.setBackground(new Color(0x46801E));
 
         final JMenu menuFile = new JMenu(FILE);
-        menuFile.setBackground(new Color(0x46801E));
         menuFile.setMnemonic(KeyEvent.VK_F);
         menuBar.add(menuFile);
         menuFile.setOpaque(false);
@@ -67,7 +66,6 @@ public class Window implements ActionListener {
         menuFile.add(fileQuit);
 
         final JMenu menuRun = new JMenu(RUN);
-        menuRun.setBackground(new Color(0x46801E));
         menuRun.setMnemonic(KeyEvent.VK_R);
         menuBar.add(menuRun);
         menuRun.setOpaque(false);
@@ -86,7 +84,6 @@ public class Window implements ActionListener {
         menuRun.add(runBuild);
 
         final JMenu menuShow = new JMenu(SHOW);
-        menuShow.setBackground(new Color(0x46801E));
         menuShow.setMnemonic(KeyEvent.VK_S);
         menuBar.add(menuShow);
         menuShow.setOpaque(false);

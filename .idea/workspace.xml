@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java" afterPath="$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PreciousAnalysis.iws" />
@@ -10,10 +11,10 @@
     <file path="/RecursiveSum.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368396689238" ignored="false" />
     <file path="/a.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449410912" ignored="false" />
     <file path="/JarFileConstructor.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368448394324" ignored="false" />
-    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368467222249" ignored="false" />
+    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368467477071" ignored="false" />
     <file path="/Activation.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449846599" ignored="false" />
     <file path="/Interaction.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368450482350" ignored="false" />
-    <file path="/Window.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368467167957" ignored="false" />
+    <file path="/Window.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368467938274" ignored="false" />
     <file path="/LogWindow.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368466787511" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +79,7 @@
       <file leaf-file-name="Window.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="30" selection-start="5092" selection-end="5092" vertical-scroll-proportion="0.64705884">
+            <state line="86" column="0" selection-start="2702" selection-end="2702" vertical-scroll-proportion="0.85294116">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -645,7 +646,11 @@
       <created>1368467224121</created>
       <updated>1368467224121</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="drivers not compiling, gui improved">
+      <created>1368467489054</created>
+      <updated>1368467489054</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -677,7 +682,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -880,7 +885,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="30" selection-start="5092" selection-end="5092" vertical-scroll-proportion="0.64705884">
+        <state line="86" column="0" selection-start="2702" selection-end="2702" vertical-scroll-proportion="0.85294116">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
