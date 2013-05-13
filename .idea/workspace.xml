@@ -2,163 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/visitor/AbstractVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Activation.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/output/ClassFile.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/instruction/ClassInstruction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/ClassRecord.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/output/ClassRepository.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/Code.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Console.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/Driver.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/Error.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/interaction/ExecutionConsole.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/input/FacFib.tjc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/input/FacFib.tjc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/input/FacFib.tjr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/input/FacFib.tjr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/input/FacFibImpl.tjc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/input/FacFibImpl.tjc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/visitor/GenerateCodeVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/instruction/Instruction$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/instruction/Instruction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Interaction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Interpreter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/instruction/MethodInstruction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/MethodRecord.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaLexer$DFA6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaLexer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$additiveExpr_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$andExpr_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$arrayLengthReference_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$classDeclaration_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$compareExpr_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$expressionList_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$expression_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$extendsClause_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$goal_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$identifier_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$mainClass_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$methodDeclarationList_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$methodDeclaration_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$methodInvocation_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$multExpr_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$orExpr_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$param_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$primaryExpressionPrefix_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$primaryExpression_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$statement_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$type_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$unaryExpr_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$varDeclarationList_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser$varDeclaration_return.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/MiniJavaParser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/visitor/PrintVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/Record.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/Scope.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/execution/StackMachine.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/input/Sum.tjc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/input/Sum.tjr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/SymbolTable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/visitor/SymbolTableVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/input/Test.tjc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/visitor/TypeCheckVisitor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/instruction/VariableInstruction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/scope/VariableRecord.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Window$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Window$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Window$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Window$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Window$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/interaction/Window.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/lib/antlr-runtime-3.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/visitor/AbstractVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassFile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/instruction/ClassInstruction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/scope/ClassRecord.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/scope/Code.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Console.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/Driver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/Error.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/interaction/ExecutionConsole.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/test/FacFib.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/visitor/GenerateCodeVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/instruction/Instruction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Interaction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Interpreter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/instruction/MethodInstruction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/scope/MethodRecord.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/MiniJavaLexer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/MiniJavaParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/test/Minimal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/PreciousAnalysis.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/PreciousExecution.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousWindow/PreciousWindow.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/visitor/PrintVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/scope/Record.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/test/RecursiveSum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/scope/Scope.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/execution/StackMachine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/test/Sum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/scope/SymbolTable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/visitor/SymbolTableVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/visitor/TypeCheckVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/instruction/VariableInstruction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/scope/VariableRecord.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Window.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/ant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/antlr_runtime_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/libraries/antlr_runtime_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/out/production/assignment/assignment/assignment.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/assignment.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/assignment.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/assignment1.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/assignmentExecution.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/test/binarytree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/test/linearsearch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/qaplug_profiles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/.idea/qaplug_profiles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousAnalysis/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Window.java" afterPath="$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Interaction.java" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Interaction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PreciousWindow/PreciousWindow.iml" afterPath="$PROJECT_DIR$/PreciousWindow/PreciousWindow.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PreciousAnalysis.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368393521314" ignored="false" />
+    <file path="/fragment.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368450748751" ignored="false" />
     <file path="/RecursiveSum.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368396689238" ignored="false" />
     <file path="/a.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449410912" ignored="false" />
     <file path="/JarFileConstructor.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368448394324" ignored="false" />
-    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449830681" ignored="false" />
+    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368450290184" ignored="false" />
     <file path="/Activation.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449846599" ignored="false" />
+    <file path="/Interaction.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368450482350" ignored="false" />
+    <file path="/Window.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368450722379" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,73 +78,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="Window.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="128" column="32" selection-start="4001" selection-end="4007" vertical-scroll-proportion="0.20588236">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1034#2138#0" expanded="true" />
+                <element signature="e#2131#2132#0" expanded="true" />
+                <element signature="e#2201#2487#0" expanded="true" />
+                <element signature="e#2480#2481#0" expanded="true" />
+                <element signature="e#2542#2821#0" expanded="true" />
+                <element signature="e#2814#2815#0" expanded="true" />
+                <element signature="e#2885#3172#0" expanded="true" />
+                <element signature="e#3165#3166#0" expanded="true" />
+                <element signature="e#3228#3538#0" expanded="true" />
+                <element signature="e#3531#3532#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Driver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="23" selection-start="2146" selection-end="2146" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scope.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/scope/Scope.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="45" selection-start="1741" selection-end="1741" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Window.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Window.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="12" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Activation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Activation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="49" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Interpreter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Interpreter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Instruction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/instruction/Instruction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="40" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Console.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Console.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="66" selection-start="664" selection-end="664" vertical-scroll-proportion="0.6776181">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="26" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+            <state line="223" column="42" selection-start="5682" selection-end="5714" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -294,16 +111,18 @@
       <file leaf-file-name="Interaction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Interaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="27" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="19" column="20" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VariableInstruction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/instruction/VariableInstruction.java">
+      <file leaf-file-name="Console.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Console.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="12" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
+            <state line="43" column="16" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -335,8 +154,9 @@
         <option value="$PROJECT_DIR$/PreciousAnalysis/test/RecursiveSum.java" />
         <option value="$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/JarFileConstructor.java" />
         <option value="$PROJECT_DIR$/PreciousExecution/src/assignment/execution/JarFileConstructor.java" />
-        <option value="$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java" />
         <option value="$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Activation.java" />
+        <option value="$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Interaction.java" />
+        <option value="$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java" />
       </list>
     </option>
   </component>
@@ -423,6 +243,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assignment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -531,12 +355,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -547,7 +374,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Interpreter">
+  <component name="RunManager" selected="Application.Window">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -668,9 +495,26 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="Window" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="assignment.Window" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PreciousWindow" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Driver" />
       <item index="1" class="java.lang.String" itemvalue="Application.Interpreter" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Window" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -710,7 +554,11 @@
       <created>1368449838257</created>
       <updated>1368449838257</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="git test">
+      <created>1368450296988</created>
+      <updated>1368450296988</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -735,7 +583,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -744,14 +592,14 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19655667" sideWeight="0.6708229" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19655667" sideWeight="0.6708229" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -850,7 +698,9 @@
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Interaction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="27" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -863,28 +713,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Interaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="27" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="23" selection-start="2146" selection-end="2146" vertical-scroll-proportion="0.0">
+        <state line="28" column="26" selection-start="727" selection-end="727" vertical-scroll-proportion="0.029411765">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/instruction/VariableInstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="12" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
+        <state line="32" column="12" selection-start="796" selection-end="796" vertical-scroll-proportion="0.029411765">
           <folding />
         </state>
       </provider>
@@ -892,13 +728,6 @@
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/scope/Scope.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="45" selection-start="1741" selection-end="1741" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="12" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -931,10 +760,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="223" column="42" selection-start="5682" selection-end="5714" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Console.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="66" selection-start="664" selection-end="664" vertical-scroll-proportion="0.6776181">
+        <state line="43" column="16" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/interaction/Interaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="20" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="32" selection-start="4001" selection-end="4007" vertical-scroll-proportion="0.20588236">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1034#2138#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="e#2201#2487#0" expanded="true" />
+            <element signature="e#2480#2481#0" expanded="true" />
+            <element signature="e#2542#2821#0" expanded="true" />
+            <element signature="e#2814#2815#0" expanded="true" />
+            <element signature="e#2885#3172#0" expanded="true" />
+            <element signature="e#3165#3166#0" expanded="true" />
+            <element signature="e#3228#3538#0" expanded="true" />
+            <element signature="e#3531#3532#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -978,7 +842,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -990,6 +854,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>PreciousWindow</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1001,7 +866,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1013,6 +878,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>antlr-runtime-3.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
