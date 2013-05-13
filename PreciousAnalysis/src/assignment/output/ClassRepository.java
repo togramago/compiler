@@ -15,6 +15,7 @@ import assignment.Driver;
 import assignment.instruction.ClassInstruction;
 
 /**
+ *
  * Generate *.tjc-file with list of *.tjp-file names
  *
  * @author Margarita Litkevych
