@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Activation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java" afterPath="$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PreciousAnalysis.iws" />
@@ -12,7 +10,7 @@
     <file path="/RecursiveSum.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368396689238" ignored="false" />
     <file path="/a.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449410912" ignored="false" />
     <file path="/JarFileConstructor.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368448394324" ignored="false" />
-    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368471364422" ignored="false" />
+    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368472722411" ignored="false" />
     <file path="/Activation.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449846599" ignored="false" />
     <file path="/Interaction.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368450482350" ignored="false" />
     <file path="/Window.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368472200880" ignored="false" />
@@ -696,7 +694,11 @@
       <created>1368471366819</created>
       <updated>1368471366819</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="activation added">
+      <created>1368472723881</created>
+      <updated>1368472723881</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -788,7 +790,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="git saved" />
+    <option name="LAST_COMMIT_MESSAGE" value="activation added" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -814,6 +816,7 @@
     <MESSAGE value="new forms opening" />
     <MESSAGE value="drivers not compiling, gui improved" />
     <MESSAGE value="git saved" />
+    <MESSAGE value="activation added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
