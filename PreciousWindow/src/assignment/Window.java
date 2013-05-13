@@ -2,6 +2,8 @@ package assignment;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
 /**
@@ -10,7 +12,7 @@ import java.awt.event.KeyEvent;
  * @author Margarita Litkevych
  * @author Tymur Maryokhin
  */
-public class Window {
+public class Window implements ActionListener {
 
     private final Dimension dim;
     private final LogWindow frame;
@@ -141,11 +143,15 @@ public class Window {
 
         final JMenuItem fileOpen = new JMenuItem("Open...",
                 KeyEvent.VK_O);
+        fileOpen.setActionCommand("Open");
+        fileOpen.addActionListener(this);
         menuFile.add(fileOpen);
         menuFile.addSeparator();
 
         final JMenuItem fileQuit = new JMenuItem("Quit",
                 KeyEvent.VK_Q);
+        fileQuit.setActionCommand("Quit");
+        fileQuit.addActionListener(this);
         menuFile.add(fileQuit);
 
         final JMenu menuRun = new JMenu("Run");
@@ -156,11 +162,15 @@ public class Window {
 
         final JMenuItem runCompile = new JMenuItem("Compile",
                 KeyEvent.VK_C);
+        runCompile.setActionCommand("Compile");
+        runCompile.addActionListener(this);
         menuRun.add(runCompile);
         menuRun.addSeparator();
 
         final JMenuItem runBuild = new JMenuItem("Build",
                 KeyEvent.VK_B);
+        runBuild.setActionCommand("Build");
+        runBuild.addActionListener(this);
         menuRun.add(runBuild);
 
         final JMenu menuShow = new JMenu("Show");
@@ -171,16 +181,22 @@ public class Window {
 
         final JMenuItem showSymbolTable = new JMenuItem("Symbol table",
                 KeyEvent.VK_S);
+        showSymbolTable.setActionCommand("Symbol table");
+        showSymbolTable.addActionListener(this);
         menuShow.add(showSymbolTable);
         menuShow.addSeparator();
 
         final JMenuItem showInstructions = new JMenuItem("Instructions",
                 KeyEvent.VK_I);
+        showInstructions.setActionCommand("Instructions");
+        showInstructions.addActionListener(this);
         menuShow.add(showInstructions);
         menuShow.addSeparator();
 
         final JMenuItem showAST = new JMenuItem("Abstract syntax tree",
                 KeyEvent.VK_A);
+        showAST.setActionCommand("Abstract syntax tree");
+        showAST.addActionListener(this);
         menuShow.add(showAST);
 
         return menuBar;
@@ -200,5 +216,11 @@ public class Window {
 
     public static void main(final String[] args) {
         new Window().show();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        frame.addToLog("actionPerformed!");
+        e.getActionCommand() ==
     }
 }
