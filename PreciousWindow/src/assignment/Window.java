@@ -1,10 +1,13 @@
 package assignment;
 
 import javax.swing.*;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.io.File;
 
 /**
  * GUI management
@@ -140,7 +143,7 @@ public class Window implements ActionListener {
 
     }
 
-    private JMenuBar createMenuBar(){
+    private JMenuBar createMenuBar() {
         final JMenuBar menuBar = new JMenuBar();
         menuBar.setBackground(new Color(0x46801E));
 
@@ -230,6 +233,47 @@ public class Window implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         final String action = e.getActionCommand();
+        if (OPEN.equals(action)) {
+            final JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setCurrentDirectory(new File("."));
 
+            final FileFilter filter = new FileNameExtensionFilter("java files",
+                    "java");
+            fileChooser.setAcceptAllFileFilterUsed(false);
+            fileChooser.setFileFilter(filter);
+
+            final int ret = fileChooser.showDialog(null, "Open file");
+            if (ret == JFileChooser.APPROVE_OPTION) {
+                setDriver = true;
+                final File file = fileChooser.getSelectedFile();
+                setupDriver(file.getAbsolutePath());
+                frame.setTitle("Compiling " + file.getAbsolutePath());
+                compileFile();
+            }
+        }
+        if (QUIT.equals(action)) {
+
+        }
+        if (RUN.equals(action)) {
+
+        }
+        if (COMPILE.equals(action)) {
+
+        }
+        if (BUILD.equals(action)) {
+
+        }
+        if (SHOW.equals(action)) {
+
+        }
+        if (SYMBOL_TABLE.equals(action)) {
+
+        }
+        if (INSTRUCTIONS.equals(action)) {
+
+        }
+        if (ABSTRACT_SYNTAX_TREE.equals(action)) {
+
+        }
     }
 }
