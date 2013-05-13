@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Activation.java" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Activation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassFile.java" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassRepository.java" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/Driver.java" afterPath="$PROJECT_DIR$/PreciousAnalysis/src/assignment/Driver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Interpreter.java" afterPath="$PROJECT_DIR$/PreciousExecution/src/assignment/execution/Interpreter.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/input/FacFib.tjc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/input/FacFib.tjr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/input/FacFibImpl.tjc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/input/Sum.tjc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/input/Sum.tjr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PreciousAnalysis/input/Test.tjc" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PreciousAnalysis.iws" />
@@ -15,7 +16,7 @@
     <file path="/RecursiveSum.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368396689238" ignored="false" />
     <file path="/a.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449410912" ignored="false" />
     <file path="/JarFileConstructor.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368448394324" ignored="false" />
-    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368474541084" ignored="false" />
+    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368476135222" ignored="false" />
     <file path="/Activation.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449846599" ignored="false" />
     <file path="/Interaction.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368450482350" ignored="false" />
     <file path="/Window.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368474218245" ignored="false" />
@@ -134,7 +135,7 @@
       <file leaf-file-name="ClassRepository.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="21" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.5303327">
+            <state line="61" column="21" selection-start="1579" selection-end="1579" vertical-scroll-proportion="1.5283757">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2074#2104#0" expanded="true" />
@@ -595,7 +596,11 @@
       <created>1368474544260</created>
       <updated>1368474544260</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="testing file storage">
+      <created>1368476137419</created>
+      <updated>1368476137419</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -620,7 +625,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -636,7 +641,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19655667" sideWeight="0.22069825" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19655667" sideWeight="0.67206985" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19655667" sideWeight="0.67206985" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32793018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -687,7 +692,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI logic added&#10;Driver syntax error fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing file storage" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -717,6 +722,7 @@
     <MESSAGE value="compilation works" />
     <MESSAGE value="compilation works 2" />
     <MESSAGE value="GUI logic added&#10;Driver syntax error fixed" />
+    <MESSAGE value="testing file storage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -837,7 +843,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousAnalysis/src/assignment/output/ClassRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="21" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.5303327">
+        <state line="61" column="21" selection-start="1579" selection-end="1579" vertical-scroll-proportion="1.5283757">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2074#2104#0" expanded="true" />
