@@ -131,6 +131,7 @@ public class Window implements ActionListener {
     }
 
     /**
+     * All action listeners for the main form
      *
      * @param e performed action on form
      */

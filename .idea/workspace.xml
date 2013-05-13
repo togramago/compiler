@@ -11,10 +11,10 @@
     <file path="/RecursiveSum.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368396689238" ignored="false" />
     <file path="/a.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449410912" ignored="false" />
     <file path="/JarFileConstructor.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368448394324" ignored="false" />
-    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368467477071" ignored="false" />
+    <file path="/Dummy.txt" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368468011590" ignored="false" />
     <file path="/Activation.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368449846599" ignored="false" />
     <file path="/Interaction.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368450482350" ignored="false" />
-    <file path="/Window.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368467938274" ignored="false" />
+    <file path="/Window.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368468045704" ignored="false" />
     <file path="/LogWindow.java" changelist="52fc00a7-66f6-4577-942a-01f3d9a0b1a4" time="1368466787511" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +79,7 @@
       <file leaf-file-name="Window.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="2702" selection-end="2702" vertical-scroll-proportion="0.85294116">
+            <state line="134" column="1" selection-start="4049" selection-end="4049" vertical-scroll-proportion="0.3529412">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -650,7 +650,11 @@
       <created>1368467489054</created>
       <updated>1368467489054</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="drivers not compiling, gui improved">
+      <created>1368468015651</created>
+      <updated>1368468015651</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -885,7 +889,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PreciousWindow/src/assignment/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2702" selection-end="2702" vertical-scroll-proportion="0.85294116">
+        <state line="134" column="1" selection-start="4049" selection-end="4049" vertical-scroll-proportion="0.3529412">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
