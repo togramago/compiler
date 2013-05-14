@@ -61,7 +61,7 @@ public class Driver {
      */
     public static void setOutputString(final String outputString) {
         boolean hasNoOutput = (outputString == null);
-        if (!hasNoOutput) {
+        if   (!hasNoOutput) {
             final File file = new File(outputString);
             if (file.exists() && file.isDirectory()) {
                 Driver.outputString = outputString;
@@ -75,7 +75,7 @@ public class Driver {
                 theDir.mkdir();
             }
 
-            Driver.outputString = theDir.getAbsolutePath();
+            Driver.outputString = theDir.getAbsolutePath()+ File.separator ;
             System.out.println("ERROR! Not valid path. Default path set.");
         }
         System.out.println("Path set to: " + Driver.outputString);
