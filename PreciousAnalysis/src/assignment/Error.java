@@ -58,10 +58,8 @@ public final class Error {
                                 final MethodRecord method, final StringBuilder logger) {
         errors++;
 
-        String methodString;
-        if (method == null) {
-            methodString = "";
-        } else {
+        String methodString = "";
+        if (method != null) {
             methodString = " in " + method.getSignature();
         }
 
