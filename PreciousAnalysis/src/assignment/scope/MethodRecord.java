@@ -177,14 +177,12 @@ public class MethodRecord implements Record {
         final List<VariableInstruction> vars = new ArrayList<VariableInstruction>();
         for (final VariableRecord parRecord : parameters) {
             final VariableInstruction variableInstruction = new VariableInstruction(
-                    parRecord.getIndex(), parRecord.getName(), 0,
-                    VariableInstruction.PARAM);
+                    parRecord.getIndex(), parRecord.getName(), 0);
             vars.add(variableInstruction);
         }
         for (final VariableRecord varRecord : variables) {
             final VariableInstruction variableInstruction = new VariableInstruction(
-                    varRecord.getIndex(), varRecord.getName(), 0,
-                    VariableInstruction.VAR);
+                    varRecord.getIndex(), varRecord.getName(), 0);
             vars.add(variableInstruction);
         }
         return vars;
