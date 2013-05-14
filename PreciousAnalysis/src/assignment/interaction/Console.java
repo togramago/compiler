@@ -5,20 +5,20 @@ import assignment.Driver;
 /**
  * Console UI management
  */
-public class Console {
+class Console {
 
     private final String[] args;
     private final Interaction interaction;
 
-    public static final String MODE_CONSOLE = "-c";
-    public static final String MODE_WINDOW = "-w";
-    public static final String MODE = "--mode";
-    public static final String SHOW_SYMBOL_TABLE_LONG = "--showSymbolTable";
-    public static final String SHOW_SYMBOL_TABLE = "-s";
-    public static final String SHOW_AST_LONG = "--showAST";
-    public static final String SHOW_AST = "-a";
-    public static final String OUTPUT = "-o";
-    public static final String OUTPUT_LONG = "--output";
+    private static final String MODE_CONSOLE = "-c";
+    private static final String MODE_WINDOW = "-w";
+    private static final String MODE = "--mode";
+    private static final String SHOW_SYMBOL_TABLE_LONG = "--showSymbolTable";
+    private static final String SHOW_SYMBOL_TABLE = "-s";
+    private static final String SHOW_AST_LONG = "--showAST";
+    private static final String SHOW_AST = "-a";
+    private static final String OUTPUT = "-o";
+    private static final String OUTPUT_LONG = "--output";
 
     private static final int NUM_MODE = 1;
     private static final int NUM_FREE_RESULT = 2;

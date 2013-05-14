@@ -7,7 +7,7 @@ import assignment.instruction.ClassInstruction;
 import assignment.instruction.Instruction;
 import assignment.instruction.MethodInstruction;
 
-public class StackMachine {
+class StackMachine {
 
     private final Stack<Integer> data;
     private final Stack<Activation> activations;
@@ -30,7 +30,7 @@ public class StackMachine {
         executeActivation(activations.pop());
     }
 
-    public void executeActivation(final Activation activation) {
+    void executeActivation(final Activation activation) {
         int counter = 0;
         final MethodInstruction currentMethod = activation.getCurrentMethod();
         while (counter < currentMethod.getInstructionNumber()) {

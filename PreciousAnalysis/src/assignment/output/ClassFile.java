@@ -59,7 +59,7 @@ public class ClassFile implements Serializable {
      *
      * @param file where instructions are written
      */
-    public final void readFromFile(final File file) {
+    final void readFromFile(final File file) {
         try {
             final FileInputStream fis = new FileInputStream(file);
             final ObjectInputStream ois = new ObjectInputStream(fis);

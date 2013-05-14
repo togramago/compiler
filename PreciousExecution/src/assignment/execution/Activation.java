@@ -8,7 +8,7 @@ import assignment.instruction.MethodInstruction;
 /**
  * Representation of method invocation for stack machine execution
  */
-public class Activation {
+class Activation {
     private ClassInstruction currentClass;
     private MethodInstruction currentMethod;
     private final List<ClassInstruction> classes;

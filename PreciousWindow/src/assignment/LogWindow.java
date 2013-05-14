@@ -3,7 +3,7 @@ package assignment;
 import javax.swing.*;
 import java.awt.*;
 
-public class LogWindow extends JFrame {
+class LogWindow extends JFrame {
     private final Dimension dim;
     private final JTextArea log;
 

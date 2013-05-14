@@ -15,7 +15,7 @@ public class Interpreter {
     private final List<ClassInstruction> classes;
     private static boolean debug;
 
-    public Interpreter(final String fileName) throws FileNotFoundException {
+    private Interpreter(final String fileName) throws FileNotFoundException {
         log = new StringBuilder();
         /* file to interpret */
         File file = new File(fileName);
@@ -27,16 +27,16 @@ public class Interpreter {
         }
     }
 
-    public String showLog() {
+    String showLog() {
         return log.toString();
     }
 
-    public void execute() {
+    void execute() {
         final StackMachine stackMachine = new StackMachine(classes, log);
         stackMachine.execute();
     }
 
-    public static void setDebug(final boolean debug) {
+    private static void setDebug(final boolean debug) {
         Interpreter.debug = debug;
     }
 

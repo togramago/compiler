@@ -173,7 +173,7 @@ public class MethodRecord implements Record {
         return index;
     }
 
-    public List<VariableInstruction> getVariablesAndParameters() {
+    List<VariableInstruction> getVariablesAndParameters() {
         final List<VariableInstruction> vars = new ArrayList<VariableInstruction>();
         for (final VariableRecord parRecord : parameters) {
             final VariableInstruction variableInstruction = new VariableInstruction(

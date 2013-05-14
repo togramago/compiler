@@ -12,214 +12,214 @@ import assignment.scope.VariableRecord;
  */
 public class AbstractVisitor {
 
-    public Object visitFile(final CommonTree node) {
+    Object visitFile(final CommonTree node) {
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitClass(final CommonTree node) {
+    Object visitClass(final CommonTree node) {
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitVarList(final CommonTree node) {
+    Object visitVarList(final CommonTree node) {
         visitChildren(node); // Default action
         return null;
     }
 
-    public void visitChildren(final CommonTree node) {
+    void visitChildren(final CommonTree node) {
         for (int i = 0; i < node.getChildCount(); i++) {
             visit((CommonTree) node.getChild(i));
         }
     }
 
-    public Object visitExtends(final CommonTree node) {
+    Object visitExtends(final CommonTree node) {
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitIf(final CommonTree node) {
+    Object visitIf(final CommonTree node) {
         // expression, statement, statement;
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitWhile(final CommonTree node) {
+    Object visitWhile(final CommonTree node) {
         // expression, statement;
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitThis(final CommonTree node) {
+    Object visitThis(final CommonTree node) {
         // expression, statement;
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitUnaryNot(final CommonTree node) {
+    Object visitUnaryNot(final CommonTree node) {
         // expression, statement;
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitSysout(final CommonTree node) {
+    Object visitSysout(final CommonTree node) {
         // expression, statement;
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitTrueFalse(final CommonTree node) {
+    Object visitTrueFalse(final CommonTree node) {
         // expression, statement;
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitLt(final CommonTree node) {
+    Object visitLt(final CommonTree node) {
         // expression, statement;
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitLogicAnd(final CommonTree node) {
+    Object visitLogicAnd(final CommonTree node) {
         // expression, statement;
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitLogicOr(final CommonTree node) {
+    Object visitLogicOr(final CommonTree node) {
         // expression, statement;
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitPlus(final CommonTree node) {
+    Object visitPlus(final CommonTree node) {
         // expression, statement;
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitMinus(final CommonTree node) {
+    Object visitMinus(final CommonTree node) {
         // expression, statement;
         visitChildren(node); // Default action
         return null;
     }
 
-    public Object visitMult(final CommonTree node) {
+    Object visitMult(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitMainClass(final CommonTree node) {
+    Object visitMainClass(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitMainMethod(final CommonTree node) {
+    Object visitMainMethod(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitParam(final CommonTree node) {
+    Object visitParam(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitParamList(final CommonTree node) {
+    Object visitParamList(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitVarDecl(final CommonTree node) {
+    Object visitVarDecl(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitVarRef(final CommonTree node) {
+    Object visitVarRef(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitTypeRef(final CommonTree node) {
+    Object visitTypeRef(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitArrayType(final CommonTree node) {
+    Object visitArrayType(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitMethodList(final CommonTree node) {
+    Object visitMethodList(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitMethodDecl(final CommonTree node) {
+    Object visitMethodDecl(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitMethodBody(final CommonTree node) {
+    Object visitMethodBody(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitReturn(final CommonTree node) {
+    Object visitReturn(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitStmntList(final CommonTree node) {
+    Object visitStmntList(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitAssign(final CommonTree node) {
+    Object visitAssign(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitArrayAssign(final CommonTree node) {
+    Object visitArrayAssign(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitArrayLengthReference(final CommonTree node) {
+    Object visitArrayLengthReference(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitArrayRead(final CommonTree node) {
+    Object visitArrayRead(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitIntArrayNew(final CommonTree node) {
+    Object visitIntArrayNew(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitNew(final CommonTree node) {
+    Object visitNew(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitMethodCall(final CommonTree node) {
+    Object visitMethodCall(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitSuffixPart(final CommonTree node) {
+    Object visitSuffixPart(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitExprList(final CommonTree node) {
+    Object visitExprList(final CommonTree node) {
         visitChildren(node);
         return null;
     }
 
-    public Object visitConst(final CommonTree node) {
+    Object visitConst(final CommonTree node) {
         final String name = node.getChild(0).getText();
 
         VariableRecord result;

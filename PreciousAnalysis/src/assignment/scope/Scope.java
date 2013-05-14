@@ -40,7 +40,7 @@ public class Scope {
     /**
      * @return class that contains this scope
      */
-    public ClassRecord getContainClass() {
+    ClassRecord getContainClass() {
         return containClass;
     }
 
@@ -48,7 +48,7 @@ public class Scope {
         this.containClass = containClass;
     }
 
-    public int getIndent() {
+    int getIndent() {
         return indent;
     }
 
@@ -56,7 +56,7 @@ public class Scope {
      * method for incrementing indents for printScope() method
      * * }
      */
-    public void incIndent() {
+    void incIndent() {
         indent++;
     }
 
@@ -164,7 +164,7 @@ public class Scope {
         return parent;
     }
 
-    public void setParent(final Scope parent) {
+    void setParent(final Scope parent) {
         this.parent = parent;
     }
 }

@@ -76,7 +76,7 @@ public class ClassRepository implements Serializable {
      * @param file of repository
      */
     @SuppressWarnings("unchecked")
-    public final void read(final File file) {
+    final void read(final File file) {
         try {
             final FileInputStream fis = new FileInputStream(file);
             final ObjectInputStream ois = new ObjectInputStream(fis);

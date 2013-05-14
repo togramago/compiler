@@ -90,7 +90,7 @@ public class ClassRecord implements Record {
         return classfile;
     }
 
-    public List<MethodInstruction> getInstructions() {
+    List<MethodInstruction> getInstructions() {
         List<MethodInstruction> instructions = new ArrayList<MethodInstruction>();
         for (final MethodRecord method : methods) {
             instructions.add(method.getMethodInstruciton());

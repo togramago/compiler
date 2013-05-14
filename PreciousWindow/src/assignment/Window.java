@@ -15,21 +15,21 @@ import java.io.File;
  */
 public class Window implements ActionListener {
 
-    public static final String FILE = "File";
-    public static final String OPEN = "Open...";
-    public static final String QUIT = "Quit";
-    public static final String RUN = "Run";
-    public static final String COMPILE = "Compile";
-    public static final String BUILD = "Build";
-    public static final String SHOW = "Show";
-    public static final String SYMBOL_TABLE = "Symbol table";
-    public static final String INSTRUCTIONS = "Instructions";
-    public static final String ABSTRACT_SYNTAX_TREE = "Abstract syntax tree";
+    private static final String FILE = "File";
+    private static final String OPEN = "Open...";
+    private static final String QUIT = "Quit";
+    private static final String RUN = "Run";
+    private static final String COMPILE = "Compile";
+    private static final String BUILD = "Build";
+    private static final String SHOW = "Show";
+    private static final String SYMBOL_TABLE = "Symbol table";
+    private static final String INSTRUCTIONS = "Instructions";
+    private static final String ABSTRACT_SYNTAX_TREE = "Abstract syntax tree";
     private final LogWindow frame;
     private final Driver driver;
     private JMenu menuShow;
 
-    public Window() {
+    private Window() {
         driver = new Driver();
 
         // clean log window
@@ -118,7 +118,7 @@ public class Window implements ActionListener {
     /**
      * show the form
      */
-    public void show() {
+    void show() {
         frame.view();
     }
 
