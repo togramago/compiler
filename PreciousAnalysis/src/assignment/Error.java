@@ -7,6 +7,7 @@ import assignment.scope.MethodRecord;
  * and error counter.
  */
 public final class Error {
+
     public static final String NULL_POINTER_EXCEPTION = "Null pointer exception";
     public static final String CLASS_EXCEPTION = "Class not found";
     public static final String IDENTIFIER_EXCEPTION = "Identifier not found";
@@ -21,7 +22,9 @@ public final class Error {
 
     // Generation code errors that should not be in release
     public static final String GC_OUT_OF_METHOD_EXCEPTION = "current method not found";
+
     public static final String UNEXPECTED_ERROR = "unexpected error";
+
     private static final String ERROR_STRING = "ERROR ";
 
     private static int errors;
@@ -52,6 +55,7 @@ public final class Error {
     static public void complain(final String message, final String name,
                                 final MethodRecord method, final StringBuilder logger) {
         errors++;
+
         String methodString;
         if (method == null) {
             methodString = "";
@@ -60,9 +64,15 @@ public final class Error {
         }
 
         if (message.equals(NULL_POINTER_EXCEPTION)) {
-            logger.append(ERROR_STRING).append(message).append(methodString);
+            logger.append(ERROR_STRING);
+            logger.append(message);
+            logger.append(methodString);
         } else {
-            logger.append(ERROR_STRING).append(message).append(": ").append(name).append(methodString);
+            logger.append(ERROR_STRING);
+            logger.append(message);
+            logger.append(": ");
+            logger.append(name);
+            logger.append(methodString);
         }
         logger.append('\n');
     }
@@ -72,6 +82,10 @@ public final class Error {
      */
     static public int getErrors() {
         return errors;
+    }
+
+    static public void addError(int errors) {
+        Error.errors += errors;
     }
 
     static public void reset() {

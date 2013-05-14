@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * Serializable representation for instructions lists of class
- *
  */
 public class ClassInstruction implements Serializable {
 

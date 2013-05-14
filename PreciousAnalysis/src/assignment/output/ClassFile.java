@@ -82,7 +82,10 @@ public class ClassFile implements Serializable {
      * @return name of generated file
      */
     public String getFileName() {
-        return Driver.outputString() + record.getName() + FILE_EXTENSION;
+        if (Driver.outputString() == null) {
+            Driver.setOutputString(Driver.outputString());
+        }
+        return Driver.outputString() + File.separator + record.getName() + FILE_EXTENSION;
     }
 
     public ClassInstruction getClassInstruction() {
