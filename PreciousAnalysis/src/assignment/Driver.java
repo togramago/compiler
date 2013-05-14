@@ -40,15 +40,6 @@ public class Driver {
 
     private static String outputString;
 
-    /**
-     * @param file name of the test program
-     */
-    public Driver(final String file) {
-        this.file = file;
-        log = new StringBuilder();
-        build = false;
-    }
-
     public Driver() {
         log = new StringBuilder();
         build = false;
@@ -63,35 +54,93 @@ public class Driver {
 
     /**
      * Sets new output path
+     * <p/>
+     * Maybe broken.
      *
      * @param outputString path to location
      */
     public static void setOutputString(final String outputString) {
-        boolean should = outputString == null;
-        if (!should) {
+        boolean hasNoOutput = (outputString == null);
+        if (!hasNoOutput) {
             final File file = new File(outputString);
             if (file.exists() && file.isDirectory()) {
                 Driver.outputString = outputString;
             } else {
-                should = true;
+                hasNoOutput = true;
             }
         }
-        if (should) {
-            final File theDir = new File("input");
+        if (hasNoOutput) {
+            final File theDir = new File("repository/");
             if (!theDir.exists()) {
                 theDir.mkdir();
             }
+
             Driver.outputString = theDir.getAbsolutePath();
-            if (Driver.outputString.charAt(Driver.outputString.length() - 1) != '/') {
-                Driver.outputString += "/";
-            }
             System.out.println("ERROR! Not valid path. Default path set.");
         }
         System.out.println("Path set to: " + Driver.outputString);
     }
 
+
     public void setFile(final String file) {
         this.file = file;
+    }
+
+
+    /**
+     * Parse through the code with Lexer and Parser.  <br>
+     * Initializes root. <br>
+     *
+     * @return true if parse finished correctly
+     */
+    private boolean parseWithGrammar() {
+        boolean result = true;
+        try {
+            final ANTLRReaderStream input = new ANTLRReaderStream(
+                    new FileReader(file));
+            final MiniJavaLexer lexer = new MiniJavaLexer(input);
+            final CommonTokenStream tokens = new CommonTokenStream(lexer);
+            final MiniJavaParser parser = new MiniJavaParser(tokens);
+            root = (CommonTree) parser.goal().getTree();
+            Error.addError(parser.getNumberOfSyntaxErrors());
+            if (Error.getErrors() > 0) {
+                Error.fatalComplain(
+                        "FATAL ERROR. " + parser.getNumberOfSyntaxErrors()
+                                + " syntax error(s). Terminated.", log);
+                result = false;
+            }
+        } catch (final Exception e) {
+            log.append("Driver.compile() failed. ");
+            result = false;
+        }
+        return result;
+    }
+
+    private boolean createSymbolTable() {
+        final SymbolTableVisitor stVisitor = new SymbolTableVisitor(
+                log);
+        stVisitor.visit(root);
+        symbolTable = stVisitor.getSymbolTable();
+
+        stVisitor.setLookupMode();
+        stVisitor.visit(root);
+
+        return Error.getErrors() == 0;
+    }
+
+    private boolean checkTypes() {
+        final TypeCheckVisitor tcVisitor = new TypeCheckVisitor(
+                symbolTable, log);
+        tcVisitor.visit(root);
+        return Error.getErrors() == 0;
+    }
+
+    private boolean generateCode() {
+        final GenerateCodeVisitor gcVisitor = new GenerateCodeVisitor(
+                symbolTable, log);
+        gcVisitor.visit(root);
+        repository = gcVisitor.getClassRepository();
+        return Error.getErrors() == 0;
     }
 
     /**
@@ -104,65 +153,20 @@ public class Driver {
         } else {
             log = new StringBuilder();
             Error.reset();
-            int errors = 0;
-            try {
-                final ANTLRReaderStream input = new ANTLRReaderStream(
-                        new FileReader(file));
-                final MiniJavaLexer lexer = new MiniJavaLexer(input);
-                final CommonTokenStream tokens = new CommonTokenStream(lexer);
-                final MiniJavaParser parser = new MiniJavaParser(tokens);
-                root = (CommonTree) parser.goal().getTree();
-                errors += parser.getNumberOfSyntaxErrors();
-                if (errors > 0) {
-                    Error.fatalComplain(
-                            "FATAL ERROR. " + parser.getNumberOfSyntaxErrors()
-                                    + " syntax error(s). Terminated.", log);
-                    build = false;
-                } else {
-
-					/* Symbol table construction */
-                    final SymbolTableVisitor stVisitor = new SymbolTableVisitor(
-                            log);
-                    stVisitor.visit(root);
-                    symbolTable = stVisitor.getSymbolTable();
-
-                    stVisitor.setLookupMode();
-                    stVisitor.visit(root);
-
-					/* Type checking */
-                    final TypeCheckVisitor tcVisitor = new TypeCheckVisitor(
-                            symbolTable, log);
-                    tcVisitor.visit(root);
-
-                    errors += Error.getErrors();
-                    if (checkForErrors(errors, false)) {
-                        final GenerateCodeVisitor gcVisitor = new GenerateCodeVisitor(
-                                symbolTable, log);
-                        gcVisitor.visit(root);
-                        repository = gcVisitor.getClassRepository();
-                        checkForErrors(errors, true);
-                    }
+            if (build = parseWithGrammar()) {
+                build &= createSymbolTable();
+                if (build)
+                    build &= checkTypes();
+                if (build && generateCode()) {
+                    log.append("Build complete.\n\n");
                 }
-            } catch (Exception e) {
-                log.append("Driver.compile() failed. ");
+            }
+            if (!build) {
+                log.append("\nBuild failed. ");
+                log.append(Error.getErrors());
+                log.append(" error(s).\n");
             }
         }
-    }
-
-    private boolean checkForErrors(final int errors, final boolean finalCheck) {
-        boolean result;
-        if (errors > 0) {
-            log.append("\nBuild failed. " + errors + " error(s).\n");
-            result = false;
-            build = false;
-        } else {
-            result = true;
-            build = true;
-            if (finalCheck) {
-                log.append("Build complete.\n\n");
-            }
-        }
-        return result;
     }
 
     /**

@@ -123,15 +123,6 @@ public class Window implements ActionListener {
     }
 
     /**
-     * send file to driver
-     *
-     * @param fileName of test program
-     */
-    private void setupDriver(final String fileName) {
-        driver.setFile(fileName);
-    }
-
-    /**
      * compile test program
      */
     private void compileFile() {
@@ -162,16 +153,16 @@ public class Window implements ActionListener {
 
             final int ret = fileChooser.showDialog(null, "Open file");
             if (ret == JFileChooser.APPROVE_OPTION) {
-                final File file = fileChooser.getSelectedFile();
-                setupDriver(file.getAbsolutePath());
-                frame.setTitle("Compiling " + file.getAbsolutePath());
+                final String filePath = fileChooser.getSelectedFile().getAbsolutePath();
+                driver.setFile(filePath);
+                frame.setTitle("Compiling " + filePath);
                 compileFile();
                 if (driver.isValidBuild()) {
                     menuShow.setEnabled(true);
                 }
             }
         }
-        if (QUIT.equals(action)) {
+        else if (QUIT.equals(action)) {
             frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
         }
         if (COMPILE.equals(action)) {
@@ -180,7 +171,8 @@ public class Window implements ActionListener {
                 menuShow.setEnabled(true);
             }
         }
-        if (BUILD.equals(action)) { //TODO: execute .jar + .tjr pair and print result
+        if (BUILD.equals(action)) {
+            //TODO: execute .jar + .tjr pair and pr\\\\int result
 
         }
         if (SYMBOL_TABLE.equals(action)) {

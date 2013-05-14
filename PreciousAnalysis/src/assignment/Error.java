@@ -7,8 +7,8 @@ import assignment.scope.MethodRecord;
  * and error counter.
  */
 public final class Error {
-    public static final int TYPE_CHECK = 100;
-    public static final int UNDECLARED_IDENTIFIER = 101;
+    //public static final int TYPE_CHECK = 100;
+    //public static final int UNDECLARED_IDENTIFIER = 101;
 
     public static final String NULL_POINTER_EXCEPTION = "Null pointer exception";
     public static final String CLASS_EXCEPTION = "Class not found";
@@ -66,9 +66,15 @@ public final class Error {
         }
 
         if (message.equals(NULL_POINTER_EXCEPTION)) {
-            logger.append(ERROR_STRING + message + methodString);
+            logger.append(ERROR_STRING);
+            logger.append(message);
+            logger.append(methodString);
         } else {
-            logger.append(ERROR_STRING + message + ": " + name + methodString);
+            logger.append(ERROR_STRING) ;
+            logger.append(message);
+            logger.append(": ");
+            logger.append(name);
+            logger.append(methodString);
         }
         logger.append('\n');
     }
@@ -78,6 +84,10 @@ public final class Error {
      */
     static public int getErrors() {
         return errors;
+    }
+
+    static public void addError(int errors) {
+        Error.errors += errors;
     }
 
     static public void reset() {
