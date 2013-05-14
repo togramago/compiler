@@ -7,9 +7,6 @@ import assignment.instruction.MethodInstruction;
 
 /**
  * Representation of method invocation for stack machine execution
- *
- * @author Margarita Litkevych
- * @author Tymur Maryokhin
  */
 public class Activation {
     private ClassInstruction currentClass;
@@ -58,8 +55,7 @@ public class Activation {
     /**
      * Find and set inner Activation's variables due to invoked method's name
      *
-     * @param activationName
-     *            name of method to invoke
+     * @param activationName name of method to invoke
      */
     public void setActivation(final String activationName) {
         final String className = activationName.split("\\.")[0];
@@ -72,8 +68,7 @@ public class Activation {
     /**
      * Find class with given name from class' repository
      *
-     * @param className
-     *            class to find
+     * @param className class to find
      * @return found class if exists, null in other case
      */
     private ClassInstruction findClass(final String className) {
@@ -86,7 +81,7 @@ public class Activation {
                     classInstruction = instruction;
                 }
             }
-            errorMessage(classInstruction==null, "Class");
+            errorMessage(classInstruction == null, "Class");
         }
         return classInstruction;
     }
@@ -94,24 +89,21 @@ public class Activation {
     /**
      * Find method in class
      *
-     * @param methodName
-     *            method to find
+     * @param methodName method to find
      * @return found method or null
      */
     private MethodInstruction findMethod(final String methodName) {
         MethodInstruction methodInstruction = currentClass
                 .getMethod(methodName);
-        errorMessage(methodInstruction==null, "Method");
+        errorMessage(methodInstruction == null, "Method");
         return methodInstruction;
     }
 
     /**
      * Error message display
      *
-     * @param condition
-     *            to fire message log
-     * @param whatIsNotFound
-     *            type of instruction that's not found
+     * @param condition      to fire message log
+     * @param whatIsNotFound type of instruction that's not found
      */
     private void errorMessage(final boolean condition,
                               final String whatIsNotFound) {

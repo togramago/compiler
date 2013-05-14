@@ -12,9 +12,6 @@ import java.io.File;
 
 /**
  * GUI management
- *
- * @author Margarita Litkevych
- * @author Tymur Maryokhin
  */
 public class Window implements ActionListener {
 

@@ -25,8 +25,6 @@ import assignment.visitor.TypeCheckVisitor;
  * MiniJavaParser tools. Traverses the AST of the test program, builds the
  * symbol table from received AST nodes. Calls checking methods.
  *
- * @author Margarita Litkevych
- * @author Tymur Maryokhin
  * @see SymbolTableVisitor
  * @see TypeCheckVisitor
  */
