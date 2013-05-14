@@ -3,6 +3,7 @@ package assignment.interaction;
 import java.io.File;
 
 import assignment.Driver;
+import assignment.output.PathManager;
 
 /**
  * UI management
@@ -30,7 +31,6 @@ public class Interaction {
 
     public Interaction(final String[] args) {
         this.args = args;
-        windowMode = true;
         showSymbolTable = false;
         showAST = false;
 
@@ -45,23 +45,11 @@ public class Interaction {
         this.showAST = showAST;
     }
 
-    public void setConsoleMode() {
-        windowMode = false;
-    }
-
-    public void setWindowMode() {
-        windowMode = true;
-    }
-
-    public void setMode(final boolean mode) {
-        this.windowMode = mode;
-    }
-
     /**
      * Runs interaction routine: choose console or window mode, run Driver and so on.
      */
     public void execute() {
-        Driver.setOutputString(null);
+        PathManager.getInstance().setPath(null);
 
         if (isAllowedName()) {
             final Driver driver = new Driver();
@@ -106,6 +94,10 @@ public class Interaction {
         System.exit(1);
     }
 
+    /**
+     * checks if specified java file exists
+     * @return true if it exists
+     */
     private boolean isAllowedName() {
         return new File(args[0]).exists();
     }

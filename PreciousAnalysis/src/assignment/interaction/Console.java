@@ -1,6 +1,7 @@
 package assignment.interaction;
 
-import assignment.Driver;
+import assignment.output.PathManager;
+
 
 /**
  * Console UI management
@@ -42,7 +43,7 @@ public class Console {
             } else if (checkArgument(args[i]) == NUM_OUTPUT) {
                 if ((args.length - 1 > i)
                         && (checkArgument(args[i + 1]) == NUM_FREE_RESULT)) {
-                    Driver.setOutputString(args[i + 1]);
+                    PathManager.getInstance().setPath(args[i + 1]);
                 }
             }
         }

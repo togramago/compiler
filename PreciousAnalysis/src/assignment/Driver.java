@@ -1,6 +1,5 @@
 package assignment;
 
-import java.io.File;
 import java.io.FileReader;
 import java.util.List;
 
@@ -38,49 +37,10 @@ public class Driver {
     private transient SymbolTable symbolTable;
     private ClassRepository repository;
 
-    private static String outputString;
-
     public Driver() {
         log = new StringBuilder();
         build = false;
     }
-
-    /**
-     * @return String with path to storage location
-     */
-    public static String outputString() {
-        return outputString;
-    }
-
-    /**
-     * Sets new output path
-     * <p/>
-     * Maybe broken.
-     *
-     * @param outputString path to location
-     */
-    public static void setOutputString(final String outputString) {
-        boolean hasNoOutput = (outputString == null);
-        if   (!hasNoOutput) {
-            final File file = new File(outputString);
-            if (file.exists() && file.isDirectory()) {
-                Driver.outputString = outputString;
-            } else {
-                hasNoOutput = true;
-            }
-        }
-        if (hasNoOutput) {
-            final File theDir = new File("repository/");
-            if (!theDir.exists()) {
-                theDir.mkdir();
-            }
-
-            Driver.outputString = theDir.getAbsolutePath()+ File.separator ;
-            System.out.println("ERROR! Not valid path. Default path set.");
-        }
-        System.out.println("Path set to: " + Driver.outputString);
-    }
-
 
     public void setFile(final String file) {
         this.file = file;
@@ -116,6 +76,10 @@ public class Driver {
         return result;
     }
 
+    /**
+     * Goes through AST and creates symbol table
+     * @return true if no errors were logged
+     */
     private boolean createSymbolTable() {
         final SymbolTableVisitor stVisitor = new SymbolTableVisitor(
                 log);
@@ -128,6 +92,10 @@ public class Driver {
         return Error.getErrors() == 0;
     }
 
+    /**
+     * Goes through AST and checks types of expressions and into expressions
+     * @return true if no errors were logged
+     */
     private boolean checkTypes() {
         final TypeCheckVisitor tcVisitor = new TypeCheckVisitor(
                 symbolTable, log);
@@ -135,6 +103,10 @@ public class Driver {
         return Error.getErrors() == 0;
     }
 
+    /**
+     * Generates code to repository
+     * @return true if no errors were logged
+     */
     private boolean generateCode() {
         final GenerateCodeVisitor gcVisitor = new GenerateCodeVisitor(
                 symbolTable, log);
