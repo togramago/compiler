@@ -37,6 +37,7 @@ public class ClassRepository implements Serializable {
         files = new ArrayList<String>();
         this.log = log;
         this.mainName = repoFile.getName();
+        PathManager.getInstance().addRepositoryFolder(repoFile.getName());
         read(repoFile);
 
     }
@@ -59,7 +60,7 @@ public class ClassRepository implements Serializable {
      */
     public void save() {
         try {
-            final FileOutputStream fos = new FileOutputStream(Driver.outputString() + mainName + ".tjr");
+            final FileOutputStream fos = new FileOutputStream(PathManager.getInstance().getPath() + mainName + ".tjr");
             final ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(files);
             oos.close();
