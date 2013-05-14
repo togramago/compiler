@@ -12,9 +12,6 @@ public class VariableInstruction implements Serializable {
     private final String name;
     private int value;
 
-    public static final int PARAM = 522;
-    public static final int VAR = 523;
-
     /**
      * @param number instruction's number
      * @param name   instruction's argument - variable name
