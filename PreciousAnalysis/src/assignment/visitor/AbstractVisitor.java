@@ -354,7 +354,6 @@ public class AbstractVisitor {
             case MiniJavaLexer.CONST:
                 result = visitConst(tree);
                 break;
-            default:
         }
         return result;
     }
