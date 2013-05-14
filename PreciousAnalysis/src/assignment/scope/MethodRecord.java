@@ -63,14 +63,6 @@ public class MethodRecord implements Record {
         this.name = name;
     }
 
-    public String getReturnType() {
-        return returnType;
-    }
-
-    public void setReturnType(final String returnType) {
-        this.returnType = returnType;
-    }
-
     /**
      * @param param to be added
      */
@@ -84,7 +76,7 @@ public class MethodRecord implements Record {
 
     @Override
     public String toString() {
-        final StringBuffer string = new StringBuffer(className);
+        final StringBuilder string = new StringBuilder(className);
         string.append('.');
         string.append(name);
         int i = 0;
@@ -160,10 +152,6 @@ public class MethodRecord implements Record {
         if (instruction != null) {
             instruction.setIndex(instructionIndex++);
             instructions.add(instruction);
-//			if ((instruction.getCode() == Code.RETURN)
-//					|| (instruction.getCode() == Code.STOP)) {
-//				System.out.println(printInstructions());
-//			}
         }
     }
 
@@ -172,7 +160,6 @@ public class MethodRecord implements Record {
         for (final VariableRecord var : list) {
             if (var.getName().equals(name)) {
                 index = var.getIndex();
-                continue;
             }
         }
         return index;
@@ -184,19 +171,6 @@ public class MethodRecord implements Record {
             index = findIndex(name, variables);
         }
         return index;
-    }
-
-//	public String printInstructions() {
-//		final StringBuilder result = new StringBuilder();
-//		result.append(getMethodHeader());
-//		for (final Instruction instruct : instructions) {
-//			result.append(instruct.toString() + '\n');
-//		}
-//		return result.toString();
-//	}
-
-    public List<Instruction> getInstructions() {
-        return instructions;
     }
 
     public List<VariableInstruction> getVariablesAndParameters() {
@@ -216,27 +190,13 @@ public class MethodRecord implements Record {
         return vars;
     }
 
-    public String getMethodHeader() {
-        final StringBuilder result = new StringBuilder(256);
-        result.append("Method " + className + "." + name + "\n(");
-        for (final VariableRecord param : parameters) {
-            result.append(" " + param.getIndex() + "=" + param.getName() + " ");
-        }
-        result.append(")\n(");
-        for (final VariableRecord var : variables) {
-            result.append(" " + var.getIndex() + "=" + var.getName() + " ");
-        }
-        result.append(")\n");
-        return result.toString();
-    }
-
     public int getInstructionIndex() {
         return instructionIndex;
     }
 
     public String getSignature() {
         final StringBuilder result = new StringBuilder(256);
-        result.append(returnType + " " + className + "." + name + " (");
+        result.append(returnType).append(" ").append(className).append(".").append(name).append(" (");
         for (int i = 0; i < paramListSize; i++) {
             result.append(parameters.get(i).getType());
             if (i != paramListSize - 1) {

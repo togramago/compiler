@@ -26,14 +26,9 @@ public class ClassInstruction implements Serializable {
         for (final MethodInstruction instruction : instructions) {
             if (instruction.isMain(className)) {
                 method = instruction;
-                continue;
             }
         }
         return method;
-    }
-
-    public List<MethodInstruction> getInstructions() {
-        return instructions;
     }
 
     public String getName() {
@@ -60,7 +55,6 @@ public class ClassInstruction implements Serializable {
         for (final MethodInstruction instruction : instructions) {
             if (methodName.equals(instruction.getName())) {
                 result = instruction;
-                continue;
             }
         }
         return result;

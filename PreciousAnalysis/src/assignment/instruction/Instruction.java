@@ -26,16 +26,16 @@ public class Instruction implements Serializable {
 
     @Override
     public String toString() {
-        final StringBuffer buffer = new StringBuffer();
-        buffer.append(instructionIndex);
-        buffer.append(" " + getName() + " ");
+        final StringBuilder builder = new StringBuilder();
+        builder.append(instructionIndex);
+        builder.append(" ").append(getName()).append(" ");
         if (argument != null) {
             if ((code == Code.ISTORE) || (code == Code.ILOAD)) {
-                buffer.append('#');
+                builder.append('#');
             }
-            buffer.append(argument.toString());
+            builder.append(argument.toString());
         }
-        return buffer.toString();
+        return builder.toString();
     }
 
     /**
@@ -97,10 +97,6 @@ public class Instruction implements Serializable {
 
     public void setIndex(final int index) {
         instructionIndex = index;
-    }
-
-    public int getIndex() {
-        return instructionIndex;
     }
 
     public void setArgument(final Object argument) {

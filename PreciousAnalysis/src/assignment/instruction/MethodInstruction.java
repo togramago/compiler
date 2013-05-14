@@ -27,10 +27,6 @@ public class MethodInstruction implements Serializable {
         return name;
     }
 
-    public List<Instruction> getInstructions() {
-        return instructions;
-    }
-
     public int getInstructionNumber() {
         return instructions.size();
     }
@@ -70,7 +66,7 @@ public class MethodInstruction implements Serializable {
     @Override
     public String toString() {
         final StringBuilder builder = new StringBuilder();
-        builder.append(name + "\n( ");
+        builder.append(name).append("\n( ");
         for (final VariableInstruction var : variables) {
             builder.append(var);
             builder.append(" ");

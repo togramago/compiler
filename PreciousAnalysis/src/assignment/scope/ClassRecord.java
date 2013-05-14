@@ -13,7 +13,7 @@ import assignment.output.ClassFile;
 
 public class ClassRecord implements Record {
 
-    private String name;
+    private final String name;
     private final List<MethodRecord> methods = new ArrayList<MethodRecord>();
 
     /**
@@ -36,10 +36,6 @@ public class ClassRecord implements Record {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(final String name) {
-        this.name = name;
     }
 
     /**
@@ -92,26 +88,6 @@ public class ClassRecord implements Record {
         final ClassFile classfile = new ClassFile(instruction, log);
         classfile.save();
         return classfile;
-    }
-
-    public List<MethodRecord> getMethods() {
-        return methods;
-    }
-
-    public void setMethods(final List<MethodRecord> list) {
-        methods.clear();
-        methods.addAll(list);
-    }
-
-    public String printInstructions() {
-        final StringBuilder out = new StringBuilder();
-
-        for (final MethodRecord entry : methods) {
-            out.append(entry.getMethodInstruciton());
-            out.append('\n');
-        }
-        return out.toString();
-
     }
 
     public List<MethodInstruction> getInstructions() {

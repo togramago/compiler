@@ -270,7 +270,7 @@ public class SymbolTableVisitor extends AbstractVisitor {
                     .getChild(1));
             if (varref != null) {
                 final String className = varref.getType();
-                final Record curRecord = (Record) symbolTable.lookup(className,
+                final Record curRecord = symbolTable.lookup(className,
                         Record.CLASS);
                 if (curRecord instanceof ClassRecord) {
                     final ClassRecord curClass = (ClassRecord) curRecord;
@@ -296,7 +296,7 @@ public class SymbolTableVisitor extends AbstractVisitor {
      */
     @Override
     public MethodRecord visitSuffixPart(final CommonTree node) {
-        final String name = (String) node.getChild(0).getText();
+        final String name = node.getChild(0).getText();
         final MethodRecord method = new MethodRecord(name, null,
                 currentClass.getName());
         visit((CommonTree) node.getChild(1));

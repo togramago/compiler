@@ -152,6 +152,7 @@ public class Window implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         final String action = e.getActionCommand();
         if (OPEN.equals(action)) {
+            menuShow.setEnabled(false); // resets the show button for next compile
             final JFileChooser fileChooser = new JFileChooser();
             fileChooser.setCurrentDirectory(new File("."));
 

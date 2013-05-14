@@ -95,13 +95,4 @@ public class SymbolTable {
 	public void resetTable() {
 		root.resetScope();
 	}
-
-	public Scope getCurrent() {
-		return current;
-	}
-
-	public Scope getRoot() {
-		return root;
-	}
-
 }

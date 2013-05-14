@@ -8,7 +8,7 @@ package assignment.scope;
 
 public class VariableRecord implements Record {
 
-    private String name;
+    private final String name;
     private String type;
     private int index;
 
@@ -16,16 +16,6 @@ public class VariableRecord implements Record {
         this.name = name;
         this.type = type;
         this.index = 0;
-    }
-
-    public VariableRecord(final String name, final String type, final int index) {
-        this.name = name;
-        this.type = type;
-        this.index = index;
-    }
-
-    public void setName(final String name) {
-        this.name = name;
     }
 
     public void setType(final String type) {

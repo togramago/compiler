@@ -8,10 +8,10 @@ import java.io.Serializable;
 public class VariableInstruction implements Serializable {
 
     private static final long serialVersionUID = 4655953718359146586L;
-    private int number;
-    private String name;
+    private final int number;
+    private final String name;
     private int value;
-    private int type;
+    private final int type;
 
     public static final int PARAM = 522;
     public static final int VAR = 523;
@@ -39,24 +39,8 @@ public class VariableInstruction implements Serializable {
         return number;
     }
 
-    public void setNumber(final int number) {
-        this.number = number;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(final String name) {
-        this.name = name;
-    }
-
-    public int getType() {
-        return type;
-    }
-
-    public void setType(final int type) {
-        this.type = type;
     }
 
     public int getValue() {

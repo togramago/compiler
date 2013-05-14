@@ -42,15 +42,6 @@ public class Driver {
 
     private static String outputString;
 
-    /**
-     * @param file name of the test program
-     */
-    public Driver(final String file) {
-        this.file = file;
-        log = new StringBuilder();
-        build = false;
-    }
-
     public Driver() {
         log = new StringBuilder();
         build = false;
@@ -154,7 +145,7 @@ public class Driver {
     private boolean checkForErrors(final int errors, final boolean finalCheck) {
         boolean result;
         if (errors > 0) {
-            log.append("\nBuild failed. " + errors + " error(s).\n");
+            log.append("\nBuild failed. ").append(errors).append(" error(s).\n");
             result = false;
             build = false;
         } else {

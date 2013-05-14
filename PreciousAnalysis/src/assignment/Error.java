@@ -52,7 +52,6 @@ public final class Error {
     static public void complain(final String message, final String name,
                                 final MethodRecord method, final StringBuilder logger) {
         errors++;
-
         String methodString;
         if (method == null) {
             methodString = "";
@@ -61,9 +60,9 @@ public final class Error {
         }
 
         if (message.equals(NULL_POINTER_EXCEPTION)) {
-            logger.append(ERROR_STRING + message + methodString);
+            logger.append(ERROR_STRING).append(message).append(methodString);
         } else {
-            logger.append(ERROR_STRING + message + ": " + name + methodString);
+            logger.append(ERROR_STRING).append(message).append(": ").append(name).append(methodString);
         }
         logger.append('\n');
     }

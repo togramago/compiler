@@ -195,7 +195,7 @@ public class GenerateCodeVisitor extends AbstractVisitor {
     /**
      * Get name of grandchild node
      *
-     * @param child
+     * @param child used to get grandchild
      * @return name of grandchild node
      */
     private String getGrandChildName(final CommonTree child) {

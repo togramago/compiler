@@ -15,8 +15,8 @@ import java.util.Set;
 public class Scope {
     private int next;
     private Scope parent;
-    private List<Scope> children;
-    private Map<String, Record> records;
+    private final List<Scope> children;
+    private final Map<String, Record> records;
     private ClassRecord containClass;
     private int indent;
 
@@ -53,7 +53,7 @@ public class Scope {
     }
 
     /**
-     * method for incrementing indents for {@link Scope.printScope() printScope
+     * method for incrementing indents for printScope() method
      * * }
      */
     public void incIndent() {
@@ -72,7 +72,6 @@ public class Scope {
         int scopeMeter = 0;
         int i = indent;
         for (final Entry<String, Record> entry : entries) {
-            i = indent;
             while (i > 0) {
                 print.append('\t');
                 i--;
@@ -119,7 +118,7 @@ public class Scope {
     public Scope enterChild() {
         Scope nextC = null;
         if (next < children.size()) {
-            nextC = (Scope) children.get(next);
+            nextC = children.get(next);
         }
         next++;
         return nextC;
@@ -132,7 +131,7 @@ public class Scope {
     public Record lookup(final String key, final int type) {
         Record result = null;
         if (records.containsKey(key)) { // Check if in current scope
-            final Record foundRecord = (Record) records.get(key);
+            final Record foundRecord = records.get(key);
             if (foundRecord.getRecordType() == type)
                 result = foundRecord;
         } else {
@@ -156,8 +155,8 @@ public class Scope {
      */
     public void resetScope() {
         next = 0;
-        for (int i = 0; i < children.size(); i++) {
-            ((Scope) children.get(i)).resetScope();
+        for (Scope aChildren : children) {
+            aChildren.resetScope();
         }
     }
 
