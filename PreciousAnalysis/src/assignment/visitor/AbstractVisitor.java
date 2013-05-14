@@ -3,7 +3,7 @@ package assignment.visitor;
 
 import org.antlr.runtime.tree.CommonTree;
 
-import assignment.MiniJavaLexer;
+import assignment.generated.MiniJavaLexer;
 import assignment.scope.Record;
 import assignment.scope.VariableRecord;
 

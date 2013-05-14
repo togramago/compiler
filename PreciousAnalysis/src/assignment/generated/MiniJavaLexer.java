@@ -1,4 +1,4 @@
-package assignment;
+package assignment.generated;
 
 import org.antlr.runtime.BaseRecognizer;
 import org.antlr.runtime.CharStream;

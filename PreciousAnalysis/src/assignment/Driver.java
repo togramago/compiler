@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.List;
 
+import assignment.generated.MiniJavaLexer;
+import assignment.generated.MiniJavaParser;
 import org.antlr.runtime.ANTLRReaderStream;
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.tree.CommonTree;
