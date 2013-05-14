@@ -1,12 +1,6 @@
-package assignment;
-
 import assignment.scope.MethodRecord;
 
-/**
- * Static class for error handling. Contains string constants for error messages
- * and error counter.
- */
-public final class Error {
+public class CompilerException extends Exception {
     public static final String NULL_POINTER_EXCEPTION = "Null pointer exception";
     public static final String CLASS_EXCEPTION = "Class not found";
     public static final String IDENTIFIER_EXCEPTION = "Identifier not found";
@@ -22,35 +16,19 @@ public final class Error {
     // Generation code errors that should not be in release
     public static final String GC_OUT_OF_METHOD_EXCEPTION = "current method not found";
     public static final String UNEXPECTED_ERROR = "unexpected error";
-    private static final String ERROR_STRING = "ERROR ";
-
+    public static final String ERROR_STRING = "ERROR ";
     private static int errors;
 
-    /**
-     * Complain on syntax error inherited from grammar.
-     *
-     * @param var    error message
-     * @param logger StringBuilder variable to append string message
-     */
-    static public void fatalComplain(final String var,
-                                     final StringBuilder logger) {
-        logger.append(var);
+    public CompilerException(final String message, final StringBuilder logger) {
+        logger.append(message);
     }
 
-    private Error() {
-        Error.reset();
+    private CompilerException() {
+        reset();
     }
 
-    /**
-     * Method for visitor's error handling.
-     *
-     * @param message error message
-     * @param name    of Record to complain on
-     * @param method  where complain was caused
-     * @param logger  StringBuilder variable to append string message
-     */
-    static public void complain(final String message, final String name,
-                                final MethodRecord method, final StringBuilder logger) {
+    public CompilerException(final String message, final String name,
+                             final MethodRecord method, final StringBuilder logger) {
         errors++;
 
         String methodString;
@@ -61,9 +39,9 @@ public final class Error {
         }
 
         if (message.equals(NULL_POINTER_EXCEPTION)) {
-            logger.append(ERROR_STRING + message + methodString);
+            logger.append(ERROR_STRING).append(message).append(methodString);
         } else {
-            logger.append(ERROR_STRING + message + ": " + name + methodString);
+            logger.append(ERROR_STRING).append(message).append(": ").append(name).append(methodString);
         }
         logger.append('\n');
     }
@@ -75,6 +53,9 @@ public final class Error {
         return errors;
     }
 
+    /**
+     * reset the number of errors
+     */
     static public void reset() {
         errors = 0;
     }
