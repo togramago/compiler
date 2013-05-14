@@ -1,12 +1,12 @@
 import assignment.scope.MethodRecord;
 
 public class CompilerException extends Exception {
+
     public static final String NULL_POINTER_EXCEPTION = "Null pointer exception";
     public static final String CLASS_EXCEPTION = "Class not found";
     public static final String IDENTIFIER_EXCEPTION = "Identifier not found";
     public static final String METHOD_EXCEPTION = "Method not found";
     public static final String DUPLICATE_DECLARATION_EXCEPTION = "duplicate declaration";
-
     public static final String LENGTH_EXCEPTION = ".length set after wrong type";
     public static final String NOT_INTEGER_EXCEPTION = "only integers allowed";
     public static final String TYPE_BRACES_EXCEPTION = "[ ] set after wrong type";
