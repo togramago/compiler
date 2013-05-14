@@ -14,12 +14,6 @@ import assignment.output.PathManager;
 public class Interaction {
 
     /**
-     * run Driver in graphical mode or in console mode. in long annotation:
-     * --mode ARG, where ARG = 0 for console mode, else for window mode. in
-     * short annotation: -c for console mode, -w for window mode.
-     */
-    private boolean windowMode;
-    /**
      * Flag for showing symbol table in console mode. --showSymbolTable or -s
      */
     private boolean showSymbolTable;
@@ -37,12 +31,12 @@ public class Interaction {
         new Console(args, this).parseArguments();
     }
 
-    public void setShowSymbolTable(final boolean showSymbolTable) {
-        this.showSymbolTable = showSymbolTable;
+    public void shouldShowSymbolTable() {
+        this.showSymbolTable = true;
     }
 
-    public void setShowAST(final boolean showAST) {
-        this.showAST = showAST;
+    public void shouldShowAST() {
+        this.showAST = true;
     }
 
     /**
@@ -81,15 +75,13 @@ public class Interaction {
         System.out.println("  <input file> -  .java-input file");
         System.out.println("  <output path> - path to the folder with tracing /");
         System.out.println("  arguments (unix like - '-fF' = '-f -F'):");
-        System.out.println("    -w | --mode n, n>0           window mode");
-        System.out.println("    -c | --mode 0                console mode");
         System.out.println("    -s | --showSymbolTable       show symbol table");
         System.out.println("    -a | --showAST               show AS-tree");
         System.out.println("    -o | --output <output path>  explicitly set output path");
         System.out.println();
         System.out.println("Example of execution may be: ");
         System.out
-                .println("  java -jar execute.jar MyApp.tjr");
+                .println("  java -jar generate.jar MyApp.java");
         System.out.println();
         System.exit(1);
     }
