@@ -9,7 +9,6 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Arrays;
 
-import assignment.Driver;
 import assignment.instruction.ClassInstruction;
 
 /**
@@ -82,10 +81,8 @@ public class ClassFile implements Serializable {
      * @return name of generated file
      */
     public String getFileName() {
-        if (Driver.outputString() == null) {
-            Driver.setOutputString(Driver.outputString());
-        }
-        return Driver.outputString() + File.separator + record.getName() + FILE_EXTENSION;
+        PathManager.getInstance().setPath(PathManager.getInstance().getPath());
+        return PathManager.getInstance().getPath() + File.separator + record.getName() + FILE_EXTENSION;
     }
 
     public ClassInstruction getClassInstruction() {
