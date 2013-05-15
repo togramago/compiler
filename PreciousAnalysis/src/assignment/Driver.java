@@ -1,15 +1,7 @@
 package assignment;
 
-import java.io.File;
-import java.io.FileReader;
-import java.util.List;
-
 import assignment.generated.MiniJavaLexer;
 import assignment.generated.MiniJavaParser;
-import org.antlr.runtime.ANTLRReaderStream;
-import org.antlr.runtime.CommonTokenStream;
-import org.antlr.runtime.tree.CommonTree;
-
 import assignment.instruction.ClassInstruction;
 import assignment.interaction.Interaction;
 import assignment.output.ClassRepository;
@@ -18,6 +10,13 @@ import assignment.visitor.GenerateCodeVisitor;
 import assignment.visitor.PrintVisitor;
 import assignment.visitor.SymbolTableVisitor;
 import assignment.visitor.TypeCheckVisitor;
+import org.antlr.runtime.ANTLRReaderStream;
+import org.antlr.runtime.CommonTokenStream;
+import org.antlr.runtime.tree.CommonTree;
+
+import java.io.File;
+import java.io.FileReader;
+import java.util.List;
 
 //TODO: IF enough time: Fix grammar for new A().foo()[0];
 //TODO: Fix grammar for no or multiple statements in methods;
@@ -149,7 +148,7 @@ public class Driver {
      */
     public void compile() {
         if (file == null) {
-            log.append("File not set.");
+            log.append("File not set.\n");
         } else {
             log = new StringBuilder();
             Error.reset();
@@ -222,6 +221,10 @@ public class Driver {
 
     public static void main(final String[] args) {
         new Interaction(args).execute();
+    }
+
+    public String getClassRepositoryPath(){
+        return repository.getRepositoryPath();
     }
 
 }

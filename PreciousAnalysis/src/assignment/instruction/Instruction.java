@@ -65,10 +65,10 @@ public class Instruction implements Serializable {
             case ILT:
                 name = "ILT";
                 break;
-            case IAND: //TODO
+            case IAND:
                 name = "IAND";
                 break;
-            case INOT: //TODO
+            case INOT:
                 name = "INOT";
                 break;
             case GOTO:

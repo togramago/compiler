@@ -35,4 +35,9 @@ class LogWindow extends JFrame {
         log.setCaretPosition(log.getDocument().getLength());
     }
 
+    public void clearLog(){
+        log.setText("");
+        log.setCaretPosition(log.getDocument().getLength());
+    }
+
 }

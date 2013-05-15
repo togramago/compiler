@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import assignment.Driver;
 import assignment.instruction.ClassInstruction;
 
 /**
@@ -105,5 +104,9 @@ public class ClassRepository implements Serializable {
             instructions.add(classfile.getClassInstruction());
         }
         return instructions;
+    }
+
+    public String getRepositoryPath(){
+        return PathManager.getInstance().getPath() + mainName + ".tjr";
     }
 }

@@ -95,7 +95,9 @@ class StackMachine {
                     activations.pop();
                     break;
                 case PRINT:
-                    System.out.println(data.pop());
+                    final Integer pop = data.pop();
+                    System.out.println(pop);
+                    log.append(pop.toString()).append("\n");
                     break;
                 case STOP:
                     return;
