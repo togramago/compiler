@@ -13,10 +13,6 @@ public class PathManager {
 
     private static PathManager instance = null;
 
-    private PathManager() {
-
-    }
-
     public static PathManager getInstance() {
         if (instance == null) {
             instance = new PathManager();
@@ -54,15 +50,6 @@ public class PathManager {
 
     public String getPath() {
         return path;
-    }
-
-    public String addToPath(String folder) {
-        System.out.println("add to path " + path);
-        final File file = new File(path + folder);
-        if (!file.exists()) {
-            file.mkdir();
-        }
-        return file.getAbsolutePath() + File.separator;
     }
 
 }
