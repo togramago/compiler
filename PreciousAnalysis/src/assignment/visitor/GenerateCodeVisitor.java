@@ -214,6 +214,14 @@ public class GenerateCodeVisitor extends AbstractVisitor {
     }
 
     @Override
+    Object visitParamList(CommonTree node) {
+        for (int i = node.getChildCount()-1; i >= 0; i--){
+            visit((CommonTree) node.getChild(i));
+        }
+        return null;
+    }
+
+    @Override
     public Object visitParam(final CommonTree node) {
         super.visitParam(node);
         final String paramName = node.getChild(1).getText();

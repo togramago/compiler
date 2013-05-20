@@ -1,6 +1,7 @@
 package assignment.scope;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import assignment.instruction.Instruction;
@@ -67,7 +68,6 @@ public class MethodRecord implements Record {
      * @param param to be added
      */
     public void addParam(final VariableRecord param) {
-
         param.setIndex(varIndex);
         parameters.add(param);
         paramListSize = parameters.size();
