@@ -280,8 +280,8 @@ public class GenerateCodeVisitor extends AbstractVisitor {
         final Instruction last = new Instruction(Code.GOTO, null);
         currentMethod.addInstruction(if_false);
         visit((CommonTree) node.getChild(1));
-        if_false.setArgument(currentMethod.getInstructionIndex());
         currentMethod.addInstruction(last);
+        if_false.setArgument(currentMethod.getInstructionIndex());
         visit((CommonTree) node.getChild(2));
         last.setArgument(currentMethod.getInstructionIndex());
         return null;
@@ -294,7 +294,6 @@ public class GenerateCodeVisitor extends AbstractVisitor {
         final Instruction if_false = new Instruction(Code.IF_FALSE, null);
         currentMethod.addInstruction(if_false);
         visit((CommonTree) node.getChild(1));
-
         currentMethod.addInstruction(new Instruction(Code.GOTO, index));
         if_false.setArgument(currentMethod.getInstructionIndex());
         return null;
