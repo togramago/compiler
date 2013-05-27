@@ -1,5 +1,7 @@
 package assignment;
-
+/**
+ * Class adds log to GUI window
+ */
 import javax.swing.*;
 import java.awt.*;
 

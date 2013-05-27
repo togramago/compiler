@@ -4,9 +4,6 @@ import java.io.File;
 
 /**
  * Manages output path for internal files .tjr and .tjc
- * User: margot
- * Date: 14.05.13
- * Time: 20:09
  */
 public class PathManager {
     private static String path;

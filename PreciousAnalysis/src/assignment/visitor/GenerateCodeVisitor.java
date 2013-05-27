@@ -1,19 +1,11 @@
 package assignment.visitor;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.antlr.runtime.tree.CommonTree;
-
 import assignment.Error;
 import assignment.instruction.Instruction;
 import assignment.output.ClassFile;
 import assignment.output.ClassRepository;
-import assignment.scope.ClassRecord;
-import assignment.scope.Code;
-import assignment.scope.MethodRecord;
-import assignment.scope.Record;
-import assignment.scope.SymbolTable;
+import assignment.scope.*;
+import org.antlr.runtime.tree.CommonTree;
 
 /**
  * Traverses the tree once: generates code instructions. Fourth traversal.
@@ -23,7 +15,6 @@ public class GenerateCodeVisitor extends AbstractVisitor {
     private final SymbolTable symbolTable;
     private MethodRecord currentMethod;
     private ClassRecord currentClass;
-    private final List<ClassFile> classfileList;
     private final StringBuilder log;
     private boolean inExpression;
     private final ClassRepository repository;
@@ -39,7 +30,6 @@ public class GenerateCodeVisitor extends AbstractVisitor {
         symbolTable.resetTable();
         this.log = log;
         inExpression = false;
-        classfileList = new ArrayList<ClassFile>();
         repository = new ClassRepository("GenerateCodeVisitor", log);
     }
 
@@ -78,7 +68,6 @@ public class GenerateCodeVisitor extends AbstractVisitor {
      */
     private void manageClassFile() {
         final ClassFile classFile = currentClass.getClassFile(log);
-        classfileList.add(classFile);
         repository.addClassFile(classFile);
     }
 
@@ -215,7 +204,7 @@ public class GenerateCodeVisitor extends AbstractVisitor {
 
     @Override
     Object visitParamList(CommonTree node) {
-        for (int i = node.getChildCount()-1; i >= 0; i--){
+        for (int i = node.getChildCount() - 1; i >= 0; i--) {
             visit((CommonTree) node.getChild(i));
         }
         return null;
