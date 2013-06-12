@@ -6,9 +6,6 @@ import java.io.File;
 
 /**
  * UI management
- *
- * @author Margarita Litkevych
- * @author Tymur Maryokhin
  */
 public class Interaction {
 
