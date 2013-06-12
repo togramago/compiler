@@ -1,4 +1,4 @@
-package assignment.interaction;
+package interaction;
 
 import assignment.Driver;
 

@@ -1,8 +1,8 @@
-package assignment.interaction;
-
-import java.io.File;
+package interaction;
 
 import assignment.Driver;
+
+import java.io.File;
 
 /**
  * UI management

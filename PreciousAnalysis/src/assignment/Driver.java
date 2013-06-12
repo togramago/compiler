@@ -3,13 +3,13 @@ package assignment;
 import assignment.generated.MiniJavaLexer;
 import assignment.generated.MiniJavaParser;
 import assignment.instruction.ClassInstruction;
-import assignment.interaction.Interaction;
 import assignment.output.ClassRepository;
 import assignment.scope.SymbolTable;
 import assignment.visitor.GenerateCodeVisitor;
 import assignment.visitor.PrintVisitor;
 import assignment.visitor.SymbolTableVisitor;
 import assignment.visitor.TypeCheckVisitor;
+import interaction.Interaction;
 import org.antlr.runtime.ANTLRReaderStream;
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.tree.CommonTree;
@@ -44,13 +44,6 @@ public class Driver {
     public Driver() {
         log = new StringBuilder();
         build = false;
-    }
-
-    /**
-     * @return String with path to storage location
-     */
-    public static String outputString() {
-        return outputString;
     }
 
     /**
@@ -223,7 +216,7 @@ public class Driver {
         new Interaction(args).execute();
     }
 
-    public String getClassRepositoryPath(){
+    public String getClassRepositoryPath() {
         return repository.getRepositoryPath();
     }
 

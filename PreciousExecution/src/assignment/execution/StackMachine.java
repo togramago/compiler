@@ -1,12 +1,11 @@
 package assignment.execution;
 
-import java.util.EmptyStackException;
-import java.util.List;
-import java.util.Stack;
-
 import assignment.instruction.ClassInstruction;
 import assignment.instruction.Instruction;
 import assignment.instruction.MethodInstruction;
+
+import java.util.List;
+import java.util.Stack;
 
 class StackMachine {
 
@@ -102,8 +101,6 @@ class StackMachine {
                     break;
                 case STOP:
                     return;
-                default:
-
             }
             counter++;
         }
